@@ -1,0 +1,81 @@
+/* Arrows */
+.responsive .slick-prev {
+  left: -200px;
+  z-index: 1;
+  padding: 60px 200px 60px 20px;
+  border: 1px solid red;
+  opacity: 0;
+}
+.responsive .slick-next {
+  right: -200px;
+  z-index: 1;
+  padding: 60px 200px 60px 20px;
+  border: 1px solid red;
+  opacity: 0;
+}
+
+/* Slick Center */
+.cl img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0) 0px 16px 10px -10px;
+}
+
+.slide {
+  flex: 0 0 auto; /* Garante que os cards não encolham */
+  width: 200px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: rgb(0 0 0) 0px 16px 10px -10px;
+  display: flex; /* Habilita flexbox para centralizar o conteúdo */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+.slide .cl img {
+  width: 100%;
+  object-fit:cover;
+  transition: transform 0.3s, filter 0.3s; /* Suaviza as animações */
+}
+
+.cl {
+  padding: 5px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .cl {
+    padding: 10px;
+  }
+}
+/* Dots Slider */
+.slick-dots li button:before {
+  color: #969eab;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  content: "•";
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+  line-height: 20px;
+  position: absolute;
+  text-align: center;
+}
+.slick-dots li.slick-active button:before {
+  color: #f9f9f9;
+}
+.slick-dots {
+  display: block;
+  list-style: none;
+  position: absolute;
+  text-align: center;
+  bottom: 0px;
+  margin: 0;
+  padding: 20px;
+  right: 8px;
+  width: 100%;
+}
+

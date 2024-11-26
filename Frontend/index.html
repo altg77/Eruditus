@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CDN Slick BannerSlider -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css'>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="/Frontend/css/index/topbar.css">
+    <link rel="stylesheet" href="/Frontend/css/index/overlayperfis.css">
+    <link rel="stylesheet" href="/Frontend/css/index/bannerslide.css">
+    <link rel="stylesheet" href="/Frontend/css/index/cardtem.css">
+    <link rel="stylesheet" href="/Frontend/css/index/reset.css">
+    <link rel="stylesheet" href="/Frontend/css/index/cursoscard.css">
+    <link rel="stylesheet" href="/Frontend/css/index/rodape.css">
+
+    <!-- Favicon e titulo -->
+    <link rel="shortcut icon" href="/Frontend/img/icons/FAVICON.png" type="image/x-icon">
+    <title>Eruditus: Assista cursos online</title>
+</head>
+<body>
+    <!-- Overlay / Add Script Js: Add and Remove-->
+    <div class="overlay">
+        <div class="overlay-content">
+            <nav class="options-overlay">
+                <a href="#" class="close">
+                    <i class="fal fa-angle-left"></i>
+                </a>
+                <p>Elegir icono</p>
+                <a class="omitir" href="#">Omitir</a>
+            </nav>
+            <div class="perfiles-section">
+                <!-- Container Disney-->
+                <p>Destacados</p>
+                <ul class="si-perfil perfil-item" id="scroll">
+                    <li >
+                        <a href="#"><img src="/Frontend/img/perfil/destacados/img1.png" onclick="changeimg('/Frontend/img/perfil/destacados/img1.png')" alt=""></a>
+                        <a href="#"><img src="/Frontend/img/perfil/destacados/img2.png" onclick="changeimg('/Frontend/img/perfil/destacados/img2.png')" alt=""></a>
+                        <a href="#"><img src="/Frontend/img/perfil/destacados/img3.png" onclick="changeimg('/Frontend/img/perfil/destacados/img3.png')" alt=""></a>
+                        <a href="#"><img src="/Frontend/img/perfil/destacados/img4.png" onclick="changeimg('/Frontend/img/perfil/destacados/img4.png')" alt=""></a>
+                        <a href="#"><img src="/Frontend/img/perfil/destacados/img5.png" onclick="changeimg('/Frontend/img/perfil/destacados/img5.png')" alt=""></a>
+                    </li>
+                </ul>
+                <p>Disney</p>
+                <ul class="si-perfil" id="scroll1">
+                    <li>
+                        <a href="#"><img src="/Frontend/img/perfil/disney/img1.png" onclick="changeimg('/Frontend/img/perfil/disney/img1.png')" alt=""></a>
+                        <a href="#"><img src="/Frontend/img/perfil/disney/img2.png" onclick="changeimg('/Frontend/img/perfil/disney/img2.png')" alt=""></a>
+                        <a href="#"><img src="/Frontend/img/perfil/disney/img3.png" onclick="changeimg('/Frontend/img/perfil/disney/img3.png')" alt=""></a>
+                        <a href="#"><img src="/Frontend/img/perfil/disney/img4.png" onclick="changeimg('/Frontend/img/perfil/disney/img4.png')" alt=""></a>
+                        <a href="#"><img src="/Frontend/img/perfil/disney/img5.png" onclick="changeimg('/Frontend/img/perfil/disney/img5.png')" alt=""></a>
+                    </li>
+                </ul>
+                <p>Marvel</p>
+                <ul class="si-perfil" id="scroll2">
+                    <li>
+                        <a href="#"><img src="/Frontend/img/perfil/marvel/img1.png" onclick="changeimg('/Frontend/img/perfil/marvel/img1.png')" alt=""></a>
+                        <a href="#"><img src="/Frontend/img/perfil/marvel/img2.png" onclick="changeimg('/Frontend/img/perfil/marvel/img2.png')" alt=""></a>
+                        <a href="#"><img src="/Frontend/img/perfil/marvel/img3.png" onclick="changeimg('/Frontend/img/perfil/marvel/img3.png')" alt=""></a>
+                        <a href="#"><img src="/Frontend/img/perfil/marvel/img4.png" onclick="changeimg('/Frontend/img/perfil/marvel/img4.png')" alt=""></a>
+                        <a href="#"><img src="/Frontend/img/perfil/marvel/img5.png" onclick="changeimg('/Frontend/img/perfil/marvel/img5.png')" alt=""></a>
+                    </li>
+                </ul>
+                <p>Pixar</p>
+                <ul class="si-perfil" id="scroll3">
+                    <li>
+                        <a href="#"><img src="/Frontend/img/perfil/starwars/img1.png" onclick="changeimg('/Frontend/img/perfil/starwars/img1.png')"alt=""></a>
+                        <a href="#"><img src="/Frontend/img/perfil/starwars/img2.png" onclick="changeimg('/Frontend/img/perfil/starwars/img2.png')"alt=""></a>
+                        <a href="#"><img src="/Frontend/img/perfil/starwars/img3.png" onclick="changeimg('/Frontend/img/perfil/starwars/img3.png')"alt=""></a>
+                        <a href="#"><img src="/Frontend/img/perfil/starwars/img4.png" onclick="changeimg('/Frontend/img/perfil/starwars/img4.png')"alt=""></a>
+                        <a href="#"><img src="/Frontend/img/perfil/starwars/img5.png" onclick="changeimg('/Frontend/img/perfil/starwars/img5.png')"alt=""></a>
+                    </li>
+                </ul>
+                <p>Star Wars</p>
+                <ul class="si-perfil" id="scroll4">
+                    <li>
+                        <a href="#"><img src="/Frontend/img/perfil/pixar/img1.png" onclick="changeimg('/Frontend/img/perfil/pixar/img1.png')" alt=""></a>
+                        <a href="#"><img src="/Frontend/img/perfil/pixar/img2.png" onclick="changeimg('/Frontend/img/perfil/pixar/img2.png')" alt=""></a>
+                        <a href="#"><img src="/Frontend/img/perfil/pixar/img3.png" onclick="changeimg('/Frontend/img/perfil/pixar/img3.png')" alt=""></a>
+                        <a href="#"><img src="/Frontend/img/perfil/pixar/img4.png" onclick="changeimg('/Frontend/img/perfil/pixar/img4.png')" alt=""></a>
+                        <a href="#"><img src="/Frontend/img/perfil/pixar/img5.png" onclick="changeimg('/Frontend/img/perfil/pixar/img5.png')" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOPBAR -->
+    <header class="header">
+        <a href="#" class="logo"><img src="/Frontend/img/icons/etuditus2.png" alt=""></a>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#">
+                        <a href="#" class="icons"><img src="/Frontend/img/icons/Topbar/home.png"  style="height: 16px; min-width: 16px; width: 16px; z-index: auto" alt="inicio"/>
+                            <p class="name-tag">inicio</p>
+                        </a>
+                    </li>
+                    <li><a href="#">
+                      <a href="#" class="icons"><img src="/Frontend/img/icons/Topbar/encontrar.png"  style="height: 16px; min-width: 16px; width: 16px; z-index: auto" alt="pesquisar"/>
+                            <p class="name-tag">Pesquisar</p>
+                        </a>
+                    </li>
+
+                    <li><a href="#">
+                      <a href="#" class="icons"><img src="/Frontend/img/icons/Topbar/alta.png"  style="height: 16px; min-width: 16px; width: 16px; z-index: auto" alt="emalta"/>
+                            <p class="name-tag">Em Alta</p>
+                        </a>
+                    </li>
+
+                    <li><a href="#">
+                      <a href="#" class="icons"><img src="/Frontend/img/icons/Topbar/categoria.png"  style="height: 16px; min-width: 16px; width: 16px; z-index: auto" alt="categoria"/>
+                            <p class="name-tag">Categorias</p>
+                        </a>
+                    </li>
+                    
+                    <li><a href="#">
+                      <a href="#" class="icons"><img src="/Frontend/img/icons/Topbar/video.png"  style="height: 16px; min-width: 16px; width: 16px; z-index: auto" alt="meuscursos"/>
+                        <p class="name-tag">Meus cursos</p>
+                        </a>
+                      </li>
+
+                      <li><a href="#">
+                        <a href="#" class="icons"><img src="/Frontend/img/icons/Topbar/em.png"  style="height: 16px; min-width: 16px; width: 16px; z-index: auto" alt="em"/>
+                          <p class="name-tag">Ensine na plataforma</p>
+                          </a>
+                        </li>
+
+                    </li>
+                </ul>
+            </nav>
+
+        <!-- PERFIL -->
+        <div class="profile">
+            <div class="profile-selected">
+                <p class="name-user">Tyllon</p>
+                <img class="avatar img-user" src="/Frontend/img/perfil/disney/img5.png" alt="">
+            </div>
+
+            <!-- Profile-nav -->
+            <nav class="profile-nav">
+                <!-- Usuario -->
+                <ul class="profile-nav-options">
+                    <li><a href="#"><p>Editar perfil</p></a></li>
+                    <li><a href="#"><p>Formas de pagamento</p></a></li>
+                    <li><a href="#"><p>Meus cursos</p></a></li>
+                    <li><a href="#"><p>Ensine na plataforma</p></a></li>
+                    <li><a href="#"><p>Ajuda</p></a></li>
+                    <li><a href="#"><p>Sair</p></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <!-- Secion Banner -->
+    <div class="container-general">
+        <!-- BANNER -->
+        <div class="slider-films">
+            <div class="slider center">       
+                <div class="slide">
+                <div class="cl">
+                    <img src="/Frontend/img/Banners/b1.png" alt="">
+                  </div></a>
+                </div>
+                <div class="slide">
+                  <div class="cl">
+                    <img src="/Frontend/img/Banners/b2.png" alt="">
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="cl">
+                    <img src="/Frontend/img/Banners/b3.png" alt="">
+                  </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conteiner Cardtem-->
+        <div class="main ci-rows">
+          <div class="grid">
+            <div class="card-ci">
+              <div class="item-border">
+                <img src="/Frontend/img/cardtte/programacao-txt.png" class="item-image">
+                <img src="/Frontend/img/cardtte/programacao.gif" class="item-image hover-image">
+              </div>
+            </div>
+            <div class="card-ci">
+              <div class="item-border">
+                <img src="/Frontend/img/cardtte/design-txt.png" class="item-image">
+                <img src="/Frontend/img/cardtte/design.gif" class="item-image hover-image">
+              </div>
+            </div>
+            <div class="card-ci">
+              <div class="item-border">
+                <img src="/Frontend/img/cardtte/cienciadd-txt.png " class="item-image">
+                <img src="/Frontend/img/cardtte/cienciadd.gif" class="item-image hover-image">
+              </div>
+            </div>
+            <div class="card-ci">
+              <div class="item-border">
+                <img src="/Frontend/img/cardtte/negocios-txt.png" class="item-image">
+                <img src="/Frontend/img/cardtte/negocios.gif" class="item-image hover-image">
+              </div>
+            </div>
+            <div class="card-ci">
+              <div class="item-border">
+                <img src="/Frontend/img/cardtte/marketing-txt.png" class="item-image">
+                <img src="/Frontend/img/cardtte/maketing.gif" class="item-image hover-image">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- CURSOS CARD -->
+        <div class="main movies-rows">
+
+          <h3 class="list-title">Lançamentos</h3>
+          <div class="slider responsive">
+            <div class="card"><h3><img src="/Frontend/img/cards/14.png"></h3></div>
+            <div class="card"><h3><img src="/Frontend/img/cards/14.png"></h3></div>
+            <div class="card"><h3><img src="/Frontend/img/cards/14.png"></h3></div>
+            <div class="card"><h3><img src="/Frontend/img/cards/14.png"></h3></div>
+            <div class="card"><h3><img src="/Frontend/img/cards/14.png"></h3></div>
+            <div class="card"><h3><img src="/Frontend/img/cards/14.png"></h3></div>
+          </div>
+
+            <h3 class="list-title">Continue assistindo</h3>
+            <div class="slider responsive">
+     
+              <div class="card"><h3><img src="/Frontend/img/cards/14.png"></h3></div>
+              <div class="card"><h3><img src="/Frontend/img/cards/14.png"></h3></div>
+              <div class="card"><h3><img src="/Frontend/img/cards/14.png"></h3></div>
+              <div class="card"><h3><img src="/Frontend/img/cards/14.png"></h3></div>
+              <div class="card"><h3><img src="/Frontend/img/cards/14.png"></h3></div>
+              <div class="card"><h3><img src="/Frontend/img/cards/14.png"></h3></div>
+            </div>
+            
+            <h3 class="list-title">Em alta</h3>
+            <div class="slider2 responsive">
+              <div class="card"><h3><img src="/Frontend/img/cards/14.png"></h3></div>
+              <div class="card"><h3><img src="/Frontend/img/cards/14.png"></h3></div>
+              <div class="card"><h3><img src="/Frontend/img/cards/14.png"></h3></div>
+              <div class="card"><h3><img src="/Frontend/img/cards/14.png"></h3></div>
+              <div class="card"><h3><img src="/Frontend/img/cards/14.png"></h3></div>
+              <div class="card"><h3><img src="/Frontend/img/cards/14.png"></h3></div>
+            </div>
+
+            <h3 class="list-title">Cursos curto período</h3>
+            <div class="slider responsive">
+              <div class="card"><h3><img src="/Frontend/img/cards/14.png"></h3></div>
+              <div class="card"><h3><img src="/Frontend/img/cards/14.png"></h3></div>
+              <div class="card"><h3><img src="/Frontend/img/cards/14.png"></h3></div>
+              <div class="card"><h3><img src="/Frontend/img/cards/14.png"></h3></div>
+              <div class="card"><h3><img src="/Frontend/img/cards/14.png"></h3></div>
+              <div class="card"><h3><img src="/Frontend/img/cards/14.png"></h3></div>
+            </div>
+
+            <h3 class="list-title">Cursos longo período</h3>
+            <div class="slider responsive">
+              <div class="card"><h3><img src="/Frontend/img/cards/14.png"></h3></div>
+              <div class="card"><h3><img src="/Frontend/img/cards/14.png"></h3></div>
+              <div class="card"><h3><img src="/Frontend/img/cards/14.png"></h3></div>
+              <div class="card"><h3><img src="/Frontend/img/cards/14.png"></h3></div>
+              <div class="card"><h3><img src="/Frontend/img/cards/14.png"></h3></div>
+              <div class="card"><h3><img src="/Frontend/img/cards/14.png"></h3></div>
+            </div>
+
+          </div>
+        </div>
+    </div>
+
+    <!--RODAPÉ -->
+    <footer class="footer-pc">
+        <div class="container">
+          <div class="row">
+            <div class="column">
+              <h4>Sobre Nós</h4>
+              <p>Eruditus! Uma plataforma de cursos feita para tornar o aprendizado simples, 
+                prático e envolvente. Descubra um mundo de conhecimento ao seu alcance!.</p>
+            </div>
+            <div class="column">
+              <h4>Categorias</h4>
+              <ul>
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Conta</a></li>
+                <li><a href="#">Contato</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <h4>Sociais</h4>
+              <ul class="social-icons">
+                <li><a href="#"><svg><!-- ícone Facebook --></svg></a></li>
+                <li><a href="#"><svg><!-- ícone Instagram --></svg></a></li>
+                <li><a href="#"><svg><!-- ícone Twitter --></svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="credits">
+            <p>© 2024. <a href="#">Eruditus Brasil</a></p>
+          </div>
+        </div>
+      </footer>
+</body>
+
+<!-- Scripts Slider JS -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js'></script>
+<script src="/Frontend/js/index/script.js"></script>
+<script src="/Frontend/js/login-registro/loginauth.js"></script>
+<script src="/Frontend/js/index/scroll.js"></script>
+<script src="/Frontend/js/index/slider.js"></script>
+<script>window.history.pushState(null, null, "/Eruditus");</script>
+</html>

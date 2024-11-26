@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Frontend/css/login-registro/registro.css">
+
+    <!-- Favicon e titulo -->
+    <link rel="shortcut icon" href="/Frontend/img/icons/FAVICON.png" type="image/x-icon">
+    <title>Sign Up | Eruditus</title>
+
+</head>
+<body>
+       <!-- Adicionando a logo acima do contêiner -->
+       <div class="logo-container">
+        <img src="/Frontend/img/icons/etuditus2.png" alt="Logo" class="logo">
+    </div>
+
+    <div class="signup-container">
+        <h1>My<img src="/Frontend/img/icons/blackeruditus.png" alt="Logo" class="logo"> </h1>
+        <h2>Cria uma conta para continuar</h2>
+        <p>Com a conta MyEruditus, você pode entrar no Eruditus e em outros serviços de empresas parceiras</p>
+
+        <form id="signupForm">
+            <input type="text" id="username" placeholder="Nome de usuário" required>
+            <input type="password" id="password" placeholder="Escolha uma senha" required>
+            <span class="eye-icon" onclick="togglePassword()">
+            </span>
+
+            <p class="name-tag">Use no mínimo 6 caracteres (com distinção entre maiúsculas e minúsculas) 
+                com pelo menos um número ou caractere especial.</p>
+
+            <!-- Caixa de seleção com texto adicional -->
+            <div class="checkbox-container">
+                <input type="checkbox" id="news-checkbox">
+                <label for="news-checkbox">Podemos usar esses dados conforme explica a nossa <a href="#">Política de Privacidade</a>. 
+                    Ao clicar em "Concordar e Continuar", você concorda com os <a href="#">Termos de Uso</a> da Eruditus com relação à sua conta MyEruditus 
+                    e confirma que leu a nossa Política de Privacidade, o Aviso de Direitos de Privacidade do Brasil e a Política de cookies.</label>
+            </div>
+
+            <button type="submit">Continuar</button>
+        </form>
+        <div id="errorMessage" class="error-message"></div>
+    </div>
+        <!-- Rodapé -->
+        <footer class="footer">
+            <p>&copy; 2024 Eruditus. Todos os direitos reservados.</p>
+            <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+        </footer>
+</body>
+
+<!-- Scripts Slider JS -->
+<script src="/Frontend/js/login-registro/cadastroauth.js"></script>
+<script>window.history.pushState(null, null, "/Eruditus/signup");</script>
+</html>

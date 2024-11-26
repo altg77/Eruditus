@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Mudar para 'flex-start' para empurrar o conteúdo para o topo */
+    min-height: 100vh; /* Garante que o conteúdo ocupe pelo menos 100% da altura da tela */
+    background: black;
+    color: white;
+}
+
+body::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+    background-color: #000; /* Fundo preto */
+}
+
+
+body::-webkit-scrollbar-thumb {
+    background-color: #cfcfcf; /* Cor da parte "segurável" */
+    border-radius: 6px; /* Bordas arredondadas */
+    border: 2px solid #000; /* Adiciona um espaço preto ao redor do thumb */
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #000; /* Cor do trilho da barra de rolagem */
+}
+
+/* Estilos do rodapé */
+.footer {
+    width: 100%;
+    background-color: #212429;
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* Espaçamento interno do rodapé */
+    font-size: 14px;
+    position: relative;
+    margin-top: auto;
+    margin-top: 70px; /* Espaçamento adicional acima do rodapé */
+}
+
+.footer a {
+    color: #00ff22;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo da logo-container */
+.logo-container {
+    margin-top: 50px; /* Adiciona espaço entre o topo e a logo */
+    margin-bottom: 10px; /* Espaço grande abaixo da logo */
+    display: flex;
+    justify-content: center; /* Garante que a logo fique centralizada horizontalmente */
+}
+
+.logo {
+    width: 250px; /* Tamanho da logo */
+    height: auto;
+}
+
+.login-container {
+    background: white;
+    color: #000000;
+    border-radius: 20px;
+    padding: 50px;
+    width: 410px;
+    height: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left; /* Alinha o conteúdo à esquerda */
+}
+
+.login-container h1 {
+    font-size: 18px;
+    display: flex;
+    align-items: center; /* Alinha a logo e o texto verticalmente */
+    gap: 5px; /* Reduz o espaço entre a logo e o texto */
+    margin-bottom: 5px; /* Reduz a margem inferior para aproximar o h1 do restante */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-container h1 img.logo {
+    width: 130px; /* Ajuste o tamanho da logo conforme necessário */
+    height: auto;
+    margin-top: -5px; /* Subir a logo um pouco */
+}
+
+.login-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.name-tag {
+    font-size: 12px;
+    margin-top: 15px;
+    color: #555; /* Texto levemente mais claro */
+    line-height: 1.5;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    padding: 17px;
+    border: none;
+    background: #000000;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bolder; /* Adicionado para deixar o texto em negrito */
+}
+
+button:hover {
+    background: #00ff22;
+    color: rgb(0, 0, 0);
+}
+
+.error-message {
+    margin-top: 10px;
+    color: red;
+    font-size: 14px;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 20px;
+    top: 60%; /* Ajuste a posição para ficar no meio do campo de senha */
+    cursor: pointer;
+}
+
+.eye {
+    width: 20px;
+    height: auto;
+}
+
+/* Estilo adicional para o campo de senha */
+input[type="password"] {
+    position: relative;
+}

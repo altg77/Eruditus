@@ -1,0 +1,95 @@
+/* RODAPÉ PC */
+.footer-pc {
+  background: #212429; /* Fundo escuro */
+  color: white; /* Texto branco */
+  padding: 2em 0; /* Espaçamento interno */
+  font-family: Arial, sans-serif;
+  position: relative; /* Mantém o rodapé no fluxo da página */
+  z-index: 1;
+}
+
+.footer-pc .container {
+  width: 80%;
+  margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+.footer-pc .row {
+  display: flex;
+  justify-content: space-between; /* Espaço igual entre colunas */
+  gap: 2em; /* Espaçamento entre colunas */
+}
+
+.footer-pc .column {
+  flex: 1; /* Todas as colunas têm tamanho igual */
+  text-align: left;
+}
+
+.footer-pc h4 {
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+  color: #f0f0f0;
+}
+
+.footer-pc p, 
+.footer-pc ul {
+  font-size: 0.9em;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.footer-pc ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-pc ul li {
+  margin-bottom: 0.5em;
+}
+
+.footer-pc ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.3s;
+}
+
+.footer-pc ul li a:hover {
+  color: rgb(0, 255, 106); /* Destaque ao passar o mouse */
+}
+
+.footer-pc .social-icons {
+  display: flex;
+  gap: 1em;
+}
+
+.footer-pc .social-icons li {
+  display: inline-block;
+}
+
+.footer-pc .social-icons svg {
+  fill: rgba(255, 255, 255, 0.6);
+  width: 24px;
+  height: 24px;
+  transition: fill 0.3s;
+}
+
+.footer-pc .social-icons svg:hover {
+  fill: rgb(21, 255, 0); /* Destaque ao passar o mouse */
+}
+
+.footer-pc .credits {
+  margin-top: 2em;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.footer-pc .credits a {
+  color: rgb(115, 255, 0);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-pc {
+    display: none; /* Esconde o rodapé para telas menores */
+  }
+}
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Frontend/css/login-registro/login.css">
+
+    <!-- Favicon e titulo -->
+    <link rel="shortcut icon" href="/Frontend/img/icons/FAVICON.png" type="image/x-icon">
+    <title>Login to Eruditus</title>
+
+</head>
+<body>
+       <!-- Adicionando a logo acima do contêiner -->
+       <div class="logo-container">
+        <img src="/Frontend/img/icons/etuditus2.png" alt="Logo" class="logo">
+    </div>
+
+    <div class="login-container">
+        <h1>My<img src="/Frontend/img/icons/blackeruditus.png" alt="Logo" class="logo"> </h1>
+        <h2>Digite seus dados de login</h2>
+        <p>Entre no Eruditus com a sua conta. Se você não tiver conta, precisará criar uma.</p>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Nome de usuário" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <span class="eye-icon" onclick="togglePassword()">
+            </span>
+
+            <button type="submit">Continuar</button>
+            <p class="name-tag">Eruditus faz parte do projeto Chaotic
+                Com o MyEruditus, você pode entrar em cursos e experiências das empresas que sao parceiras, 
+                como Senai.</p>
+        </form>
+        <div id="errorMessage" class="error-message"></div>
+    </div>
+
+        <!-- Rodapé -->
+        <footer class="footer">
+            <p>&copy; 2024 Eruditus. Todos os direitos reservados.</p>
+            <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+        </footer> 
+
+</body>
+
+<!-- Scripts Slider JS -->
+<script src="/Frontend/js/login-registro/loginauth.js"></script>
+<script>window.history.pushState(null, null, "/Eruditus/login");</script>
+</html>
