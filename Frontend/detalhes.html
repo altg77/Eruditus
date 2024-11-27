@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalhes da Série</title>
     <link rel="stylesheet" href="/Frontend/css/detalhes/style.css">
+    
+    <!-- Favicon e titulo -->
+    <link rel="shortcut icon" href="/Frontend/img/icons/FAVICON.png" type="image/x-icon">
+    <title>Eruditus: Assista cursos online</title>
 </head>
 <body>
+    <div id="topbar-container"></div> <!-- Aqui será carregado o topbar -->
+
     <!-- Conteúdo principal -->
     <div class="detail-container">
         <div class="banner">
@@ -38,6 +43,7 @@
     </div>
 
     <script>window.history.pushState(null, null, "/Eruditus/details");</script>
+    <script src="/Frontend/js/topbar.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
