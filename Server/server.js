@@ -6,14 +6,6 @@ const app = express();
 // Serve os arquivos estáticos da pasta 'Frontend'
 app.use('/Frontend', express.static(path.join(__dirname, '../Frontend')));
 
-// Rota para a página de topbar
-app.get('/Eruditus/topbar', (req, res) => {
-    res.sendFile(path.join(__dirname, '../Frontend', 'topbar.html'));
-});
-
-
-// PAGINAS
-
 // Rota para a página inicial
 app.get('/Eruditus', (req, res) => {
     res.sendFile(path.join(__dirname, '../Frontend', 'index.html'));

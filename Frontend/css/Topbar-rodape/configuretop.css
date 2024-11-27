@@ -1,0 +1,9 @@
+#topbar-container {
+    position: relative; /* Comportamento padrão, desce com o fluxo da página */
+    width: 100%; /* Largura total da tela */
+    background-color: #fff; /* Cor de fundo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    position: sticky; /* Fixa no topo enquanto desce */
+    top: 0; /* Sempre visível a partir do topo */
+    z-index: 100; /* Caso precise que fique acima de outros elementos */
+}

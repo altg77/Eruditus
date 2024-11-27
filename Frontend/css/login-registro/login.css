@@ -4,11 +4,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Mudar para 'flex-start' para empurrar o conteúdo para o topo */
-    min-height: 100vh; /* Garante que o conteúdo ocupe pelo menos 100% da altura da tela */
-    background: black;
-    color: white;
+    justify-content: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Garante ocupação de 100% da tela */
+    background-color: black; /* Fundo preto */
+    color: white; /* Texto branco */
+    overflow-x: hidden; /* Remove qualquer rolagem horizontal */
 }
+
 
 body::-webkit-scrollbar {
     width: 12px; /* Largura da barra de rolagem */
@@ -26,27 +28,6 @@ body::-webkit-scrollbar-track {
     background-color: #000; /* Cor do trilho da barra de rolagem */
 }
 
-/* Estilos do rodapé */
-.footer {
-    width: 100%;
-    background-color: #212429;
-    color: white;
-    text-align: center;
-    padding: 20px 0; /* Espaçamento interno do rodapé */
-    font-size: 14px;
-    position: relative;
-    margin-top: auto;
-    margin-top: 70px; /* Espaçamento adicional acima do rodapé */
-}
-
-.footer a {
-    color: #00ff22;
-    text-decoration: none;
-}
-
-.footer a:hover {
-    text-decoration: underline;
-}
 
 /* Estilo da logo-container */
 .logo-container {
@@ -65,12 +46,13 @@ body::-webkit-scrollbar-track {
     background: white;
     color: #000000;
     border-radius: 20px;
-    padding: 50px;
-    width: 410px;
-    height: 500px;
+    padding: 30px;
+    width: 90%; /* Responsivo para telas menores */
+    max-width: 400px; /* Define um limite máximo para telas grandes */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: left; /* Alinha o conteúdo à esquerda */
+    text-align: center; /* Centraliza texto dentro do contêiner */
 }
+
 
 .login-container h1 {
     font-size: 18px;
@@ -154,4 +136,27 @@ button:hover {
 /* Estilo adicional para o campo de senha */
 input[type="password"] {
     position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    .logo-container {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .login-container {
+        padding: 20px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    input[type="text"], input[type="password"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 15px;
+        font-size: 14px;
+    }
 }

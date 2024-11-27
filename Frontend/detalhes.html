@@ -4,46 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Frontend/css/detalhes/style.css">
+
+     <!-- CSS CONFIGURAR TOPBAR -->
+     <link rel="stylesheet" href="/Frontend/css/Topbar-rodape/configuretop.css">
     
     <!-- Favicon e titulo -->
     <link rel="shortcut icon" href="/Frontend/img/icons/FAVICON.png" type="image/x-icon">
-    <title>Eruditus: Assista cursos online</title>
+    <title>Poder da Venda | Eruditus</title>
 </head>
+
 <body>
     <div id="topbar-container"></div> <!-- Aqui será carregado o topbar -->
 
     <!-- Conteúdo principal -->
     <div class="detail-container">
         <div class="banner">
-            <img src="banner.jpg" alt="Banner da Série" class="banner-img">
+            <img src="/Frontend/img/cards/14.png" alt="Banner da Série" class="banner-img">
         </div>
         <div class="info">
-            <h1 class="title">Sobrenatural</h1>
-            <p class="subtitle">1 indicação ao PRIMETIME EMMYS® em 2008</p>
+            <h1 class="title">Poder da Venda</h1>
+            <p class="subtitle">+2.000 de INDICAÇÕES | Alicia Martins®</p>
             <p class="description">
-                Na tradição de drama de caráter entrelaçado com o sobrenatural, um tipo novo de viagem emocionante
-                leva os espectadores em uma jornada ao mundo sombrio do inexplicável em "Supernatural".
+                Descubra os segredos das vendas de alto impacto com o curso O Poder da Venda. 
+                Aprenda técnicas comprovadas para conquistar clientes, superar objeções e criar relacionamentos duradouros. 
+                Com estratégias práticas e insights poderosos, você estará preparado para alcançar resultados excepcionais e 
+                transformar sua abordagem comercial. Não importa seu nível de experiência, este curso é o guia definitivo 
+                para dominar a arte de vender e expandir suas oportunidades de sucesso.
             </p>
             <div class="metadata">
-                <span>IMDb 8,4</span>
                 <span>2005</span>
-                <span>22 episódios</span>
+                <span>- 2 Temporadas | 22 Episodios </span>
             </div>
             <div class="tags">
-                <span>Aventura</span>
-                <span>Suspense</span>
-                <span>Drama</span>
-                <span>Fantasia</span>
+                <span>6 Artigos</span>
+                <span>17,5 Horas de vídeo</span>
+                <span>14 Recursos e atividades</span>
+                <span>Certificado</span>
             </div>
             <div class="buttons">
-                <button class="watch-now">Assistir agora</button>
-                <button class="buy-options">Mais opções de compra/aluguel</button>
+                <button class="watch-now">Começe assitir as aulas</button>
+                <button class="buy-options">Adicionar ao carrinho</button>
             </div>
         </div>
     </div>
 
-    <script>window.history.pushState(null, null, "/Eruditus/details");</script>
-    <script src="/Frontend/js/topbar.js"></script>
-    <script src="script.js"></script>
+    <div id="rodape-container"></div> <!-- Aqui será carregado o rodape -->
+
 </body>
+
+<script>window.history.pushState(null, null, "/Eruditus/details");</script>
+
+<!-- Scripts topbar e rodape JS -->
+<script src="/Frontend/js/topbar-rodape/topbar.js"></script>
+<script src="/Frontend/js/topbar-rodape/rodape.js"></script>
+<script src="script.js"></script>
+
 </html>

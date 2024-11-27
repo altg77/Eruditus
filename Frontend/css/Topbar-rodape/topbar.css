@@ -209,6 +209,7 @@ a {
   animation-name: viewprofiles;
   animation-duration: 0.3s;
 }
+
 @keyframes viewprofiles {
   0% {
     top: -50px;

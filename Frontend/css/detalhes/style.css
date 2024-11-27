@@ -8,7 +8,6 @@ body {
 .detail-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-top: 20px;
 }
 
@@ -27,7 +26,6 @@ body {
 
 .info {
     max-width: 800px;
-    text-align: center;
     padding: 20px;
 }
 
@@ -69,8 +67,8 @@ body {
 }
 
 button {
-    background: #1f80e0;
-    color: white;
+    background: #006d0f;
+    color: rgb(255, 255, 255);
     border: none;
     padding: 10px 20px;
     margin: 5px;
@@ -80,5 +78,6 @@ button {
 }
 
 button:hover {
-    background: #1464a8;
+    background: #0f3d10;
+    color: white;
 }
