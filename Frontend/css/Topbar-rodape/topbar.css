@@ -75,17 +75,17 @@ a {
 }
 
 .nav-links p:after {
-  bottom: 0;
-  content: "";
-  display: block;
-  border-radius: 10px;
-  height: 2px;
-  left: 0;
-  position: relative;
-  background: #00ff22;
-  transition: 0.2s ease 0s, left 0.2s ease 0s;
-  width: 0;
-  opacity: 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    border-radius: 10px;
+    height: 2px;
+    left: 0;
+    position: relative;
+    background: #00ff22;
+    transition: 0.2s ease 0s, left 0.2s ease 0s;
+    width: 0;
+    opacity: 0;
 }
 
 .nav-links a:hover p:after {
@@ -289,7 +289,6 @@ a {
 
 .dropdown .dropdown-menu {
   display: none;
-  position: absolute;
   top: 100%;
   left: 0;
   background-color: black;
