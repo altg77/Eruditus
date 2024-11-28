@@ -3,45 +3,52 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center; /* Centraliza verticalmente */
-    min-height: 100vh; /* Garante ocupação de 100% da tela */
-    background-color: black; /* Fundo preto */
-    color: white; /* Texto branco */
-    overflow-x: hidden; /* Remove qualquer rolagem horizontal */
+    background-color: black;
+    color: white;
 }
 
 
 body::-webkit-scrollbar {
-    width: 12px; /* Largura da barra de rolagem */
-    background-color: #000; /* Fundo preto */
+    width: 12px;
 }
 
-
 body::-webkit-scrollbar-thumb {
-    background-color: #cfcfcf; /* Cor da parte "segurável" */
-    border-radius: 6px; /* Bordas arredondadas */
-    border: 2px solid #000; /* Adiciona um espaço preto ao redor do thumb */
+    background-color: #cfcfcf;
+    border-radius: 6px;
+    border: 2px solid #000;
 }
 
 body::-webkit-scrollbar-track {
-    background-color: #000; /* Cor do trilho da barra de rolagem */
+    background-color: #000;
 }
-
 
 /* Estilo da logo-container */
 .logo-container {
-    margin-top: 50px; /* Adiciona espaço entre o topo e a logo */
-    margin-bottom: 10px; /* Espaço grande abaixo da logo */
+    margin-top: 50px;
+    margin-bottom: 20px;
     display: flex;
-    justify-content: center; /* Garante que a logo fique centralizada horizontalmente */
+    justify-content: center;
+    align-items: center;
 }
 
+
 .logo {
-    width: 250px; /* Tamanho da logo */
+    max-width: 100%; /* Logo se adapta ao container */
+    width: 250px; /* Define um tamanho inicial */
     height: auto;
 }
 
+
+/* Contêiner externo para centralizar o login */
+.container-centralizado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* Mantém o fundo preto */
+    padding-bottom: 180px; /* Adiciona espaço na parte inferior do login */
+}
+
+/* Estilo do login-container permanece igual */
 .login-container {
     background: white;
     color: #000000;
@@ -50,8 +57,8 @@ body::-webkit-scrollbar-track {
     width: 90%; /* Responsivo para telas menores */
     max-width: 400px; /* Define um limite máximo para telas grandes */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center; /* Centraliza texto dentro do contêiner */
 }
+
 
 
 .login-container h1 {
@@ -97,22 +104,26 @@ input[type="text"], input[type="password"] {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
 }
 
 button {
-    padding: 17px;
+    width: 100%; /* Botão ocupará toda a largura disponível */
+    padding: 15px;
     border: none;
     background: #000000;
-    color: rgb(255, 255, 255);
+    color: #fff;
     border-radius: 20px;
-    cursor: pointer;
     font-size: 16px;
-    font-weight: bolder; /* Adicionado para deixar o texto em negrito */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 button:hover {
     background: #00ff22;
-    color: rgb(0, 0, 0);
+    color: #000;
 }
 
 .error-message {
@@ -138,25 +149,3 @@ input[type="password"] {
     position: relative;
 }
 
-@media screen and (max-width: 768px) {
-    .logo-container {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .login-container {
-        padding: 20px;
-        width: 100%;
-        max-width: 300px;
-    }
-
-    input[type="text"], input[type="password"] {
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    button {
-        padding: 15px;
-        font-size: 14px;
-    }
-}

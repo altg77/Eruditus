@@ -3,10 +3,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* Mudar para 'flex-start' para empurrar o conteúdo para o topo */
-    min-height: 100vh; /* Garante que o conteúdo ocupe pelo menos 100% da altura da tela */
-    background: black;
+    background-color: black;
     color: white;
 }
 
@@ -26,28 +23,16 @@ body::-webkit-scrollbar-track {
     background-color: #000; /* Cor do trilho da barra de rolagem */
 }
 
-/* Estilos do rodapé */
-.footer {
-    width: 100%;
-    background-color: #212429;
-    color: white;
-    text-align: center;
-    padding: 20px 0; /* Espaçamento interno do rodapé */
-    font-size: 14px;
-    position: relative;
-    margin-top: auto;
-    margin-top: 70px; /* Espaçamento adicional acima do rodapé */
-    z-index: 1;
+/* Contêiner externo para centralizar o login */
+.container-centralizado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* Mantém o fundo preto */
+    padding-bottom: 180px; /* Adiciona espaço na parte inferior do login */
 }
 
-.footer a {
-    color: #00ff22;
-    text-decoration: none;
-}
 
-.footer a:hover {
-    text-decoration: underline;
-}
 
 /* Estilo da logo-container */
 .logo-container {
