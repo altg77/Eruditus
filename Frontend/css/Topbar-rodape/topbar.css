@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
 }
@@ -43,6 +44,7 @@ a {
   flex-grow: 1;
   overflow: hidden;
 }
+
 .nav-links ul {
   display: flex;
   white-space: nowrap;
@@ -54,6 +56,7 @@ a {
   display: inline-block;
   position: relative;
 }
+
 .nav-links ul li a {
   font-size: 12px;
   margin-right: 10px;
@@ -72,8 +75,7 @@ a {
 }
 
 .nav-links p:after {
-  bottom: -px;
-  /* bottom: 0; */
+  bottom: 0;
   content: "";
   display: block;
   border-radius: 10px;
@@ -267,4 +269,68 @@ a {
 }
 .plus-perfil:hover {
   background: rgb(102, 102, 102);
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/*Categorias*/
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown .dropdown-btn {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+}
+
+.dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: black;
+  padding: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  list-style: none;
+  margin: 0;
+  z-index: 1000;
+}
+
+.dropdown .dropdown-menu li {
+  margin: 5px 0;
+}
+
+.dropdown .dropdown-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Hover effect for dropdown items */
+.dropdown .dropdown-menu li a:hover {
+  background-color: #575757;
+  padding-left: 10px;
+}
+
+/* Responsividade */
+@media screen and (min-width: 300px) {
+  .dropdown-menu {
+      width: 100%;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  .dropdown-menu {
+      width: 200px;
+  }
 }
