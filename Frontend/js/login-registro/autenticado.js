@@ -26,15 +26,17 @@ function carregarTopbar(arquivo, container) {
             container.innerHTML = html; // Insere o conteúdo HTML no container
         })
         .catch((error) => console.error("Erro:", error));
-}
 
-// Função para atualizar o username na topbar
-function atualizarUsername(username) {
-    const usernameElement = document.getElementById("user-name"); // Seleciona o elemento onde o nome será exibido
-    if (usernameElement) {
-        usernameElement.textContent = username; // Substitui o conteúdo pelo nome do usuário
     }
-}
+    
+// Função para atualizar o username na topbar
+    function atualizarUsername(username) {
+        const usernameElement = document.getElementById("user-name"); // Seleciona o elemento onde o nome será exibido
+        if (usernameElement) {
+            usernameElement.textContent = username; // Substitui o conteúdo pelo nome do usuário
+        }
+ }
+
 
 // Executa a verificação quando a página é carregada
 document.addEventListener("DOMContentLoaded", verificarUsuarioLogado);

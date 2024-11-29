@@ -164,6 +164,13 @@
 <script src="/Frontend/js/topbar-rodape/rodape.js"></script>
 <script src="/Frontend/js/login-registro/autenticado.js"></script>
 
+<script>// Função para atualizar o username na topbar
+  function atualizarUsername(username) {
+      const usernameElement = document.getElementById("user-name"); // Seleciona o elemento onde o nome será exibido
+      if (usernameElement) {
+          usernameElement.textContent = username; // Substitui o conteúdo pelo nome do usuário
+      }
+  }</script>
 
 <script>window.history.pushState(null, null, "/Eruditus");</script>
 </html>
