@@ -1,51 +1,63 @@
-// Função para verificar se o usuário está logado
-function verificarUsuarioLogado() {
-    const username = localStorage.getItem("username"); // Obtém o nome de usuário armazenado
+function verificarAutenticacao() {
+    const activeUser = localStorage.getItem("activeUser"); // Usuário ativo
+    const users = JSON.parse(localStorage.getItem("users")) || {}; // Todos os usuários
+    const token = users[activeUser]; // Token do usuário ativo
 
-    // Seleciona o elemento onde a topbar será carregada
+    // Simula a validação do token
+    if (!token || generateToken(activeUser, null) !== token) {
+        console.warn("Autenticação inválida. Redirecionando para a página de login.");
+        window.location.href = "/Frontend/login.html"; // Redireciona se inválido
+    } else {
+        console.log(`Usuário autenticado: ${activeUser}`);
+        verificarUsuarioLogado(); // Atualiza a interface
+    }
+}
+
+function verificarUsuarioLogado() {
+    const activeUser = localStorage.getItem("activeUser");
     const topbarContainer = document.getElementById("topbar-container");
 
-    if (username) {
-        // Se o usuário estiver logado, carrega 'topbar.html'
+    if (activeUser) {
         carregarTopbar("/Frontend/html/topbar.html", topbarContainer);
+        atualizarUsername(activeUser);
     } else {
-        // Se não estiver logado, carrega 'topbarAuth.html'
         carregarTopbar("/Frontend/html/topbarAuth.html", topbarContainer);
     }
 }
 
-// Função para carregar um arquivo HTML dentro de um elemento
 function carregarTopbar(arquivo, container) {
     fetch(arquivo)
         .then((response) => {
-            if (!response.ok)
-                throw new Error("Erro ao carregar o arquivo: " + response.statusText);
+            if (!response.ok) throw new Error("Erro ao carregar o arquivo: " + response.statusText);
             return response.text();
         })
         .then((html) => {
-            container.innerHTML = html; // Insere o conteúdo HTML no container
+            container.innerHTML = html;
         })
         .catch((error) => console.error("Erro:", error));
-
-    }
-    
-// Função para atualizar o username na topbar
-    function atualizarUsername(username) {
-        const usernameElement = document.getElementById("user-name"); // Seleciona o elemento onde o nome será exibido
-        if (usernameElement) {
-            usernameElement.textContent = username; // Substitui o conteúdo pelo nome do usuário
-        }
- }
-
-
- function sair() {
-    // Remove o username do localStorage
-    localStorage.removeItem("username");
-
-    verificarUsuarioLogado();
 }
 
+function atualizarUsername(username) {
+    const interval = setInterval(() => {
+        const usernameElement = document.getElementById("user-name");
+        if (usernameElement) {
+            clearInterval(interval);
+            usernameElement.textContent = username || "Visitante";
+        }
+    }, 100);
+}
 
+function sair() {
+    const users = JSON.parse(localStorage.getItem("users")) || {};
+    const activeUser = localStorage.getItem("activeUser");
 
-// Executa a verificação quando a página é carregada
-document.addEventListener("DOMContentLoaded", verificarUsuarioLogado);
+    if (activeUser) {
+        delete users[activeUser]; // Remove o token do usuário ativo
+        localStorage.setItem("users", JSON.stringify(users));
+    }
+    localStorage.removeItem("activeUser"); // Limpa o usuário ativo
+    verificarUsuarioLogado(); 
+}
+
+// Executa a verificação ao carregar
+document.addEventListener("DOMContentLoaded", verificarUsuarioLogado());
