@@ -174,8 +174,8 @@ a {
 }
 
 .btn-login {
-  background-color: #007bff; /* Cor de fundo (azul padrão) */
-  color: white; /* Cor do texto */
+  background-color:#00ff22; /* Cor de fundo (azul padrão) */
+  color: black; /* Cor do texto */
   text-decoration: none; /* Remove o sublinhado */
   font-size: 16px; /* Tamanho da fonte */
   font-weight: bold; /* Negrito */
@@ -185,7 +185,7 @@ a {
 }
 
 .btn-login:hover {
-  background-color: #0056b3; /* Cor ao passar o mouse */
+  background-color:#1a7009; /* Cor ao passar o mouse */
   cursor: pointer; /* Mostra o ponteiro ao passar o mouse */
 }
 

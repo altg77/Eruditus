@@ -38,5 +38,14 @@ function carregarTopbar(arquivo, container) {
  }
 
 
+ function sair() {
+    // Remove o username do localStorage
+    localStorage.removeItem("username");
+
+    verificarUsuarioLogado();
+}
+
+
+
 // Executa a verificação quando a página é carregada
 document.addEventListener("DOMContentLoaded", verificarUsuarioLogado);
