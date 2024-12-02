@@ -18,12 +18,18 @@
 
     <!-- Conteúdo principal -->
     <div class="detail-container">
-        <div class="banner">
-            <img src="/Frontend/img/cards/14.png" alt="Banner da Série" class="banner-img">
-        </div>
         <div class="info">
             <h1 class="title">Poder da Venda</h1>
             <p class="subtitle">+2.000 de INDICAÇÕES | Alicia Martins®</p>
+
+            <div class="season-selector">
+                <label for="season-select">Temporadas</label>
+                <select id="season-select" onchange="loadEpisodes()">
+                    <option value="1">Temporada 1</option>
+                    <option value="2">Temporada 2</option>
+                </select>
+            </div>
+
             <p class="description">
                 Descubra os segredos das vendas de alto impacto com o curso O Poder da Venda. 
                 Aprenda técnicas comprovadas para conquistar clientes, superar objeções e criar relacionamentos duradouros. 
@@ -47,6 +53,10 @@
             </div>
         </div>
     </div>
+    
+    <div class="episode-list">
+        <!-- Episódios serão carregados dinamicamente aqui -->
+    </div>
 
     <div id="rodape-container"></div> <!-- Aqui será carregado o rodape -->
 
@@ -57,6 +67,7 @@
 <!-- Scripts topbar e rodape JS -->
 <script src="/Frontend/js/topbar-rodape/topbar.js"></script>
 <script src="/Frontend/js/topbar-rodape/rodape.js"></script>
+<script src="/Frontend/js/detalhes/detalhes.js"></script>
 <script src="script.js"></script>
 
 </html>

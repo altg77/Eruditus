@@ -2,26 +2,22 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #141414;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.9) 40%, rgba(0, 0, 0, 1)),
+                url('/Frontend/img/cards/14.png') no-repeat left center;
+    background-size: cover;
     color: #fff;
+
+    /* Configurações para layout flexível */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura da tela */
 }
 
 .detail-container {
+    flex: 1; /* Ocupa o espaço disponível, empurrando o rodapé para baixo */
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-}
-
-.banner {
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-    position: relative;
-}
-
-.banner-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .info {
@@ -80,4 +76,81 @@ button {
 button:hover {
     background: #0f3d10;
     color: white;
+}
+
+
+/* TEMPORADAS */
+.season-selector select {
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.season-selector {
+    margin-top: 20px; /* Espaçamento entre o subtítulo e a seleção */
+    display: flex;
+    justify-content: flex-start;
+}
+
+.season-selector label {
+    margin-right: 10px;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.season-selector select {
+    padding: 10px 15px; /* Aumenta o tamanho do select */
+    font-size: 1.2rem; /* Torna o texto maior */
+    border-radius: 10px; /* Bordas arredondadas mais suaves */
+    background: #333;
+    color: #fff;
+    border: 1px solid #444;
+    cursor: pointer;
+}
+
+.episode-list {
+    padding: 20px;
+    background: #1a1a1a;
+    border-radius: 5px;
+    max-height: 60vh;
+    overflow-y: auto;
+    margin: 20px;
+}
+
+.episode {
+    display: flex;
+    align-items: center;
+    background: #2a2a2a;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.episode img {
+    width: 100px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.episode-info {
+    flex: 1;
+}
+
+.episode-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.episode-desc {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.season-selector label {
+    display: none; /* Oculta o label mas mantém a funcionalidade */
 }
