@@ -53,6 +53,12 @@
             </div>
         </div>
     </div>
+
+    <div class="nav-bar">
+        <a href="#episodios" class="nav-item">Episódios</a>
+        <a href="#atividades" class="nav-item">Atividades</a>
+        <a href="#sobre" class="nav-item">Sobre</a>
+    </div>
     
     <div class="episode-list">
         <!-- Episódios serão carregados dinamicamente aqui -->
@@ -64,10 +70,12 @@
 
 <script>window.history.pushState(null, null, "/Eruditus/details");</script>
 
-<!-- Scripts topbar e rodape JS -->
-<script src="/Frontend/js/topbar-rodape/topbar.js"></script>
+<!-- Scripts de authenticação, topbar e rodape -->
 <script src="/Frontend/js/topbar-rodape/rodape.js"></script>
+<script src="/Frontend/js/login-registro/autenticado.js"></script>
+<script src="/Frontend/js/topbar-rodape/accoutsair.js"></script>
+
+<script src="/Frontend/js/detalhes/efeito.js"></script>
 <script src="/Frontend/js/detalhes/detalhes.js"></script>
-<script src="script.js"></script>
 
 </html>
