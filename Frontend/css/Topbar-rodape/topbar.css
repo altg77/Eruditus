@@ -322,3 +322,48 @@ a {
   color: black;
   background-color: #2bff00;
 }
+
+/* ------------------------------------------------------------------------------------------------------------- */
+ /* Estilo para o modal */
+ .modal {
+  display: none; /* Escondido por padrão */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+.modal-buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-buttons button:first-child {
+  background-color: #28a745; /* Cor verde para "Sim" */
+  color: #fff;
+}
+
+.modal-buttons button:last-child {
+  background-color: #dc3545; /* Cor vermelha para "Não" */
+  color: #fff;
+}
+
+.modal-buttons button:hover {
+  opacity: 0.9;
+}

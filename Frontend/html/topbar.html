@@ -146,9 +146,21 @@
                 <li><a href="#"><p>Meus cursos</p></a></li>
                 <li><a href="#"><p>Ensine na plataforma</p></a></li>
                 <li><a href="#"><p>Ajuda</p></a></li>
-                <li><a href="#" onclick="sair()"><p>Sair</p></a></li>
+                <li><a href="#" onclick="mostrarLogoutModal()"><p>Sair</p></a></li>
             </ul>
         </nav>
     </div>
+
+    <!-- Modal de Confirmação -->
+<div id="logoutModal" class="modal">
+    <div class="modal-content">
+        <p>Deseja realmente sair?</p>
+        <div class="modal-buttons">
+            <button onclick="processeLogout()">Sim</button>
+            <button onclick="esconderLogoutModal()">Não</button>
+        </div>
+    </div>
+</div>
+
 </header>
 
