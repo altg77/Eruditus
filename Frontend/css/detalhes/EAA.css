@@ -67,7 +67,14 @@
     text-align: center;
     font-size: 16px;
     font-weight: 500;
-    color: #444;
+    color: #adadad;
+}
+
+.professor {
+    font-size: 2rem; /* Aumenta o tamanho da fonte */
+    font-weight: bold;
+    color: #00ff08;
+    margin-bottom: 10px;
 }
 
 /* Efeito ao passar o mouse */

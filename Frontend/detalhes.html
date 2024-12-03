@@ -24,7 +24,7 @@
             <p class="subtitle">+2.000 de INDICAÇÕES | Alicia Martins®</p>
 
             <div class="season-selector">
-                <label for="season-select"></label>
+                <label for="season-select">Temporadas</label>
                 <select id="season-select" onchange="loadEpisodes()">
                     <option value="1">Temporada 1</option>
                     <option value="2">Temporada 2</option>
@@ -58,7 +58,7 @@
     <div class="nav-bar">
         <a href="#episodios" class="nav-item" onclick="showEpisodes()">Episódios</a>
         <a href="#atividades" class="nav-item" onclick="showActivities()">Atividades</a>
-        <a href="#alunos" class="nav-item" onclick="showStudents()">Alunos</a>
+        <a href="#turma" class="nav-item" onclick="showStudents()">Turma</a>
         <a href="#sobre" class="nav-item" onclick="showAbout()">Sobre</a>
     </div>
     
@@ -80,8 +80,10 @@
 <!-- Scripts de Loads -->
 <script src="/Frontend/js/detalhes/efeito.js"></script>
 <script src="/Frontend/js/detalhes/episodios.js"></script>
-<script src="/Frontend/js/detalhes/alunos.js"></script>
+<script src="/Frontend/js/detalhes/turma.js"></script>
 <script src="/Frontend/js/detalhes/atividades.js"></script>
+<script src="/Frontend/js/detalhes/sobre.js"></script>
+
 <script>window.onload = loadEpisodes;</script>
 
 </html>
