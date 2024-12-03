@@ -1,3 +1,5 @@
+const lives = {title: "Live: Aula 1", desc: "Desenvolva melhor seus conhecimentos.", img: "path/to/image1.jpg"};
+
 const episodes = {
     1: [
         { title: "Episódio 1: Introdução", desc: "Descubra os fundamentos das vendas de impacto.", img: "path/to/image1.jpg" },
@@ -9,7 +11,7 @@ const episodes = {
     ]
 };
 
-function loadEpisodes() {
+function showEpisodes() {
     const season = document.getElementById("season-select").value;
     const contentList = document.querySelector(".content-list");
     contentList.innerHTML = ""; // Limpa o conteúdo atual
@@ -35,26 +37,5 @@ function loadEpisodes() {
             </div>
         `;
         contentList.appendChild(episodeElement);
-    });
-}
-
-function showEpisodes() {
-    const contentList = document.querySelector(".content-list");
-    contentList.innerHTML = ""; // Limpa o conteúdo atual
-
-    Object.keys(episodes).forEach(season => {
-        episodes[season].forEach(episode => {
-            const episodeElement = document.createElement("div");
-            episodeElement.classList.add("episode");
-
-            episodeElement.innerHTML = `
-                <img src="${episode.img}" alt="${episode.title}">
-                <div class="episode-info">
-                    <div class="episode-title">${episode.title}</div>
-                    <div class="episode-desc">${episode.desc}</div>
-                </div>
-            `;
-            contentList.appendChild(episodeElement);
-        });
     });
 }

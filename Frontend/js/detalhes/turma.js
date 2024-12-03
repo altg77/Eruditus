@@ -1,9 +1,6 @@
 const professor = "Alicia Martins"; // Nome do professor
 const students = [
-    "Ana Souza", "Carlos Silva", "Fernanda Oliveira", "Gabriel Costa", "Isabela Santos",
-    "João Pereira", "Juliana Rocha", "Lucas Lima", "Mariana Alves", "Miguel Souza",
-    "Paula Costa", "Pedro Oliveira", "Raquel Fernandes", "Ricardo Lima", "Roberta Dias",
-    "Sabrina Rocha", "Thiago Martins", "Vanessa Alves", "Vinícius Lima", "Vitoria Silva"
+    "Ana Souza", "Carlos Silva", "Fernanda Oliveira", "Gabriel Costa", "Isabela Santos"
 ];
 
 function showStudents() {

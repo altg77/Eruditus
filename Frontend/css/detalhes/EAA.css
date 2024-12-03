@@ -1,5 +1,6 @@
 /* Estilo para os contêineres de conteúdo */
 .content-list {
+    cursor: pointer;
     padding: 20px;
     border-radius: 5px;
     max-height: 60vh;
@@ -83,5 +84,6 @@
 .content-list .student:hover {
     transform: scale(1.01); /* Aumenta ligeiramente */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+    color: #00ff08;
 }
 
