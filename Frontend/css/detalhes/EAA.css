@@ -1,0 +1,80 @@
+/* Estilo para os contêineres de conteúdo */
+.content-list {
+    padding: 20px;
+    border-radius: 5px;
+    max-height: 60vh;
+    overflow-y: auto;
+    margin: 30px; /* Margem para afastar */
+}
+
+/* Estilo da barra de rolagem para o .content-list */
+.content-list::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+    background-color: #000; /* Fundo preto */
+}
+
+.content-list::-webkit-scrollbar-thumb {
+    background-color: #cfcfcf; /* Cor da parte "segurável" */
+    border-radius: 6px; /* Bordas arredondadas */
+    border: 2px solid #000; /* Adiciona um espaço preto ao redor do thumb */
+}
+
+.content-list::-webkit-scrollbar-track {
+    background-color: #000; /* Cor do trilho da barra de rolagem */
+}
+
+/* Estilo genérico para Episódios, Atividades e Alunos */
+.content-list .episode,
+.content-list .activity,
+.content-list .student {
+    display: flex;
+    align-items: center;
+    background: #2a2a2a;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Imagem para os episódios */
+.content-list .episode img {
+    width: 100px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+/* Informação dos episódios */
+.content-list .episode-info {
+    flex: 1;
+}
+
+.content-list .episode-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.content-list .episode-desc {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Atividades e Alunos */
+.content-list .activity,
+.content-list .student {
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+}
+
+/* Efeito ao passar o mouse */
+.content-list .episode:hover,
+.content-list .activity:hover,
+.content-list .student:hover {
+    transform: scale(1.01); /* Aumenta ligeiramente */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+}
+

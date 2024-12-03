@@ -47,17 +47,5 @@ function atualizarUsername(username) {
     }, 100);
 }
 
-function sair() {
-    const users = JSON.parse(localStorage.getItem("users")) || {};
-    const activeUser = localStorage.getItem("activeUser");
-
-    if (activeUser) {
-        delete users[activeUser]; // Remove o token do usuário ativo
-        localStorage.setItem("users", JSON.stringify(users));
-    }
-    localStorage.removeItem("activeUser"); // Limpa o usuário ativo
-    verificarUsuarioLogado(); 
-}
-
 // Executa a verificação ao carregar
 document.addEventListener("DOMContentLoaded", verificarUsuarioLogado());

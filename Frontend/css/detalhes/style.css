@@ -173,48 +173,6 @@ button:hover {
     background-color: #006d0f; /* Cor da barra quando o item está selecionado */
 }
 
-
-/* EPISODIOS */
-.episode-list {
-    padding: 20px;
-    border-radius: 5px;
-    max-height: 60vh;
-    overflow-y: auto;
-    margin: 30px; /* Margem para afastar */
-}
-
-.episode {
-    display: flex;
-    align-items: center;
-    background: #2a2a2a;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
-    color: #fff;
-}
-
-.episode img {
-    width: 100px;
-    height: 60px;
-    margin-right: 10px;
-    border-radius: 5px;
-}
-
-.episode-info {
-    flex: 1;
-}
-
-.episode-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.episode-desc {
-    font-size: 0.9rem;
-    color: #ccc;
-}
-
 .season-selector label {
     display: none; /* Oculta o label mas mantém a funcionalidade */
 }

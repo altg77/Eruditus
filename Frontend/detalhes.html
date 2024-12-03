@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Frontend/css/detalhes/style.css">
+    <link rel="stylesheet" href="/Frontend/css/detalhes/EAA.css">
 
      <!-- CSS CONFIGURAR TOPBAR -->
      <link rel="stylesheet" href="/Frontend/css/Topbar-rodape/configuretop.css">
@@ -23,7 +24,7 @@
             <p class="subtitle">+2.000 de INDICAÇÕES | Alicia Martins®</p>
 
             <div class="season-selector">
-                <label for="season-select">Temporadas</label>
+                <label for="season-select"></label>
                 <select id="season-select" onchange="loadEpisodes()">
                     <option value="1">Temporada 1</option>
                     <option value="2">Temporada 2</option>
@@ -42,7 +43,7 @@
                 <span>- 2 Temporadas | 22 Episodios </span>
             </div>
             <div class="tags">
-                <span>6 Artigos</span>
+                <span>6 Atividades</span>
                 <span>17,5 Horas de vídeo</span>
                 <span>14 Recursos e atividades</span>
                 <span>Certificado</span>
@@ -55,13 +56,14 @@
     </div>
 
     <div class="nav-bar">
-        <a href="#episodios" class="nav-item">Episódios</a>
-        <a href="#atividades" class="nav-item">Atividades</a>
-        <a href="#sobre" class="nav-item">Sobre</a>
+        <a href="#episodios" class="nav-item" onclick="showEpisodes()">Episódios</a>
+        <a href="#atividades" class="nav-item" onclick="showActivities()">Atividades</a>
+        <a href="#alunos" class="nav-item" onclick="showStudents()">Alunos</a>
+        <a href="#sobre" class="nav-item" onclick="showAbout()">Sobre</a>
     </div>
     
-    <div class="episode-list">
-        <!-- Episódios serão carregados dinamicamente aqui -->
+    <div class="content-list">
+        <!-- O conteúdo dinâmico será exibido aqui -->
     </div>
 
     <div id="rodape-container"></div> <!-- Aqui será carregado o rodape -->
@@ -75,7 +77,11 @@
 <script src="/Frontend/js/login-registro/autenticado.js"></script>
 <script src="/Frontend/js/topbar-rodape/accoutsair.js"></script>
 
+<!-- Scripts de Loads -->
 <script src="/Frontend/js/detalhes/efeito.js"></script>
-<script src="/Frontend/js/detalhes/detalhes.js"></script>
+<script src="/Frontend/js/detalhes/episodios.js"></script>
+<script src="/Frontend/js/detalhes/alunos.js"></script>
+<script src="/Frontend/js/detalhes/atividades.js"></script>
+<script>window.onload = loadEpisodes;</script>
 
 </html>
