@@ -56,20 +56,19 @@
     </div>
 
     <div class="nav-bar">
-        <a href="#episodios" class="nav-item" onclick="showEpisodes()">Episódios</a>
-        <a href="#atividades" class="nav-item" onclick="showActivities()">Atividades</a>
-        <a href="#turma" class="nav-item" onclick="showStudents()">Turma</a>
-        <a href="#sobre" class="nav-item" onclick="showAbout()">Sobre</a>
+        <a href="#episodios" class="nav-item" onclick="showEpisodes(), toggleOculta()">Episódios</a>
+        <a href="#atividades" class="nav-item" onclick="showActivities(), toggleVisivel()">Atividades</a>
+        <a href="#turma" class="nav-item" onclick="showStudents(), toggleOculta()">Turma</a>
+        <a href="#sobre" class="nav-item" onclick="showAbout(), toggleOculta()">Sobre</a>
     </div>
 
     <div class="actividade-selector">
-    <label for="actividade-select">Atividades
-        <select id="contentselect" onchange="showActivities()">
-                <option value="all">Mostrar Tudo</option>
+        <label for="content-select">Atividades</label>
+            <select id="content-select" onchange="showActivities()">
+                <option value="all">Todos os temas</option>
                 <option value="activities">Atividades</option>
                 <option value="evaluations">Avaliações</option>
-    </select>
-    </label>
+            </select>
     </div>
 
     <div class="content-list">
@@ -93,7 +92,9 @@
 <script src="/Frontend/js/detalhes/turma.js"></script>
 <script src="/Frontend/js/detalhes/atividades.js"></script>
 <script src="/Frontend/js/detalhes/sobre.js"></script>
+<script src="/Frontend/js/detalhes/configurar.js"></script>
 
 <script>window.onload = showEpisodes;</script>
+<script>toggleOculta();</script>
 
 </html>
