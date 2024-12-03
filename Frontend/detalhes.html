@@ -61,7 +61,17 @@
         <a href="#turma" class="nav-item" onclick="showStudents()">Turma</a>
         <a href="#sobre" class="nav-item" onclick="showAbout()">Sobre</a>
     </div>
-    
+
+    <div class="actividade-selector">
+    <label for="actividade-select">Atividades
+        <select id="contentselect" onchange="showActivities()">
+                <option value="all">Mostrar Tudo</option>
+                <option value="activities">Atividades</option>
+                <option value="evaluations">Avaliações</option>
+    </select>
+    </label>
+    </div>
+
     <div class="content-list">
         <!-- O conteúdo dinâmico será exibido aqui -->
     </div>

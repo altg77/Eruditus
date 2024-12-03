@@ -87,3 +87,59 @@
     color: #00ff08;
 }
 
+.content-list .live {
+    margin-bottom: 40px; /* Maior espaçamento após a live */
+}
+
+.activity {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Estilo para o contêiner do seletor */
+.actividade-selector {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    margin-top: 20px; /* Espaço superior */
+    margin-bottom: 20px; /* Espaço inferior */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #f1f1f1; /* Cor de fundo do contêiner */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 600px; /* Limita a largura máxima */
+    margin-left: auto;
+    margin-right: auto; /* Centraliza o contêiner */
+}
+
+/* Estilo para o seletor (select) */
+#content-select {
+    padding: 8px 15px; /* Espaçamento interno do select */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    background-color: #fff; /* Cor de fundo */
+    border: 2px solid #007BFF; /* Borda azul */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: all 0.3s ease; /* Transição suave para efeitos */
+    width: 200px; /* Largura do select */
+}
+
+/* Efeito de hover para o seletor */
+#content-select:hover {
+    border-color: #0056b3; /* Cor de borda mais escura ao passar o mouse */
+}
+
+/* Efeito de foco (quando o usuário clica no seletor) */
+#content-select:focus {
+    outline: none; /* Remove a borda padrão */
+    border-color: #0056b3; /* Borda azul escura ao focar */
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5); /* Sombra ao focar */
+}
