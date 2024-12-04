@@ -24,6 +24,17 @@
   transition: transform 0.5s ease-in-out;
 }
 
+#em-alta .card {
+  height: 500px;  /* Altere para a altura desejada */
+  max-height: 500px;  /* Para garantir que a altura não ultrapasse o limite */
+}
+
+#em-alta .card img {
+  height: 100%;  /* Ajuste a imagem para preencher o novo tamanho */
+  object-fit: cover;  /* Garante que a imagem preencha o card sem distorcer */
+}
+
+
 .carousel .card {
   margin-top: 15px;
   min-width: calc(20% - 10px);  /* Ajuste a largura para levar em conta a margem */
