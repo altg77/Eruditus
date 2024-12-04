@@ -32,6 +32,10 @@ function showEpisodes() {
     `;
     contentList.appendChild(liveElement);
 
+    //Modificar 
+    const selector = document.querySelector(".actividade-selector");
+    selector.style.display = "none"; 
+
     // Alterar a navegação para Episódios ao selecionar a temporada
     document.querySelectorAll('.nav-item').forEach(item => {
         item.classList.remove('selected');

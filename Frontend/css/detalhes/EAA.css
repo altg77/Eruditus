@@ -116,29 +116,16 @@
 
 h3 {
     font-size: 46px;
-    color: #5c5c5c;
+    color: #ffffff;
 }
 
 /* Estilo para o seletor (select) */
 #content-select {
-    padding: 8px 15px; /* Espaçamento interno */
-    font-size: 16px; /* Tamanho da fonte */
-    color: #333; /* Cor do texto */
-    border: 2px solid #00ff2a; /* Borda azul */
-    border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
-    transition: all 0.3s ease; /* Transição suave */
-    width: 500px; /* Largura do select */
-}
-
-/* Efeito de hover para o seletor */
-#content-select:hover {
-    border-color: #00b30f; /* Cor de borda mais escura ao passar o mouse */
-}
-
-/* Efeito de foco (quando o usuário clica no seletor) */
-#content-select:focus {
-    outline: none; /* Remove a borda padrão */
-    border-color: #00b300; /* Borda azul escura ao focar */
-    box-shadow: 0 0 5px rgba(0, 179, 39, 0.5); /* Sombra ao focar */
+    padding: 10px 15px; /* Aumenta o tamanho do select */
+    font-size: 1.2rem; /* Torna o texto maior */
+    border-radius: 10px; /* Bordas arredondadas mais suaves */
+    background: #333;
+    color: #fff;
+    border: 1px solid #444;
+    cursor: pointer;
 }
