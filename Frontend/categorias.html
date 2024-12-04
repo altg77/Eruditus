@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CDN Slick BannerSlider -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css'>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="/Frontend/css/index/bannerslide.css">
+    <link rel="stylesheet" href="/Frontend/css/index/reset.css">
+    <link rel="stylesheet" href="/Frontend/css/index/cursoscard.css">
+    <link rel="stylesheet" href="/Frontend/css/categorias/style.css">
+
+    <!-- CSS CONFIGURAR TOPBAR -->
+    <link rel="stylesheet" href="/Frontend/css/Topbar-rodape/configuretop.css">
+
+    <!-- Favicon e titulo -->
+    <link rel="shortcut icon" href="/Frontend/img/icons/FAVICON.png" type="image/x-icon">
+    <title>Eruditus | Explorar </title>
+
+</head>
+<body>
+
+  <div id="topbar-container"></div> <!-- Aqui será carregado o topbar -->
+
+
+<!-- CURSOS CARD -->
+
+<!-- Título principal e Select -->
+<div class="categoria-container">
+    <h3 class="listatitle">Programação</h3>
+    <select id="categoria-select" onchange="filtrarConteudo()">
+        <option value="todos">Todos conteúdos</option>
+        <option value="em-alta">Em alta</option>
+        <option value="curto-periodo">Cursos curto período</option>
+        <option value="longo-periodo">Cursos longo período</option>
+    </select>
+</div>
+
+<div class="main movies-rows">
+    <div class="slider responsive">
+      <div class="card">
+        <h3><img src="/Frontend/img/cards/14.png" alt= "Card1"></h3></div>
+
+      <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card2" ></h3></div>
+      <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card3"></h3></div>
+      <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card4"></h3></div>
+      <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card5"></h3></div>
+    </div>
+
+      <div class="slider responsive">
+
+        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card7"></h3></div>
+        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card8"></h3></div>
+        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card9"></h3></div>
+        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card10"></h3></div>
+        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card11"></h3></div>
+      </div>
+      
+      <div class="slider responsive">
+
+        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card7"></h3></div>
+        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card8"></h3></div>
+        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card9"></h3></div>
+        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card10"></h3></div>
+        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card11"></h3></div>
+      </div>
+
+      <div class="slider responsive">
+        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card19"></h3></div>
+        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card20"></h3></div>
+        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card21"></h3></div>
+        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card22"></h3></div>
+        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card23"></h3></div>
+      </div>
+
+      <div class="slider responsive">
+        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card25"></h3></div>
+        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card26"></h3></div>
+        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card27"></h3></div>
+        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card28"></h3></div>
+        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card29"></h3></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="rodape-container"></div> <!-- Aqui será carregado o rodape -->
+
+
+</body>
+
+<!-- Scripts JS -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js'></script>
+<script src="/Frontend/js/index/script.js"></script>
+<script src="/Frontend/js/index/scroll.js"></script>
+<script src="/Frontend/js/index/slider.js"></script>
+
+<!-- Scripts de authenticação, topbar e rodape -->
+<script src="/Frontend/js/topbar-rodape/rodape.js"></script>
+<script src="/Frontend/js/login-registro/autenticado.js"></script>
+<script src="/Frontend/js/topbar-rodape/accoutsair.js"></script>
+
+
+<script>window.history.pushState(null, null, "/Eruditus/service");</script>
+
+</html>

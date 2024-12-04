@@ -120,6 +120,31 @@ h3 {
 }
 
 /* Estilo para o seletor (select) */
+
+/* Estilo para o contêiner do seletor */
+.actividade-selector {
+    display: flex;
+    justify-content: flex-start; /* Alinha à esquerda */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 5px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    width: fit-content; /* Ajusta a largura ao conteúdo */
+    margin-top: 40px; /* Reduz espaço acima */
+    margin-left: 45px; /* Afasta do canto esquerdo */
+}
+
+/* Remove o label de atividades */
+.actividade-selector label { 
+    display: none; /* Oculta o texto do label */
+}
+
+h3 {
+    font-size: 46px;
+    color: #ffffff;
+}
+
+/* Estilo para o seletor (select) */
 #content-select {
     padding: 10px 15px; /* Aumenta o tamanho do select */
     font-size: 1.2rem; /* Torna o texto maior */
@@ -129,3 +154,4 @@ h3 {
     border: 1px solid #444;
     cursor: pointer;
 }
+

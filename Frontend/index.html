@@ -35,7 +35,7 @@
         <div class="slider-films">
             <div class="slider center">       
                 <div class="slide">
-                <div class="cl">
+                <div class="cl" >
                     <img src="/Frontend/img/Banners/b1.png" alt="">
                   </div></a>
                 </div>
@@ -57,7 +57,7 @@
         <div class="main ci-rows">
           <div class="grid">
             <div class="card-ci">
-              <div class="item-border">
+              <div class="item-border " onclick="window.location.href='/Frontend/categorias.html'">
                 <img src="/Frontend/img/cardtte/programacao-txt.png" alt= "CardProgramaçãoTXT" class="item-image">
                 <img src="/Frontend/img/cardtte/programacao.gif" alt= "CardProgramacao" class="item-image hover-image">
               </div>
@@ -90,64 +90,60 @@
         </div>
         
         <!-- CURSOS CARD -->
-        <div class="main movies-rows">
 
+        <div class="conteiner-super">
+
+        <!-- Contêiner para "Lançamentos" -->
+        <div class="carousel-container">
           <h3 class="list-title">Lançamentos</h3>
-          <div class="slider responsive">
-            <div class="card" onclick="window.location.href='/Frontend/detalhes.html'">
-              <h3><img src="/Frontend/img/cards/14.png" alt= "Card1"></h3></div>
-
-            <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card2" ></h3></div>
-            <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card3"></h3></div>
-            <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card4"></h3></div>
-            <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card5"></h3></div>
-            <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card6"></h3></div>
+          <button class="prev" onclick="moveCarousel(-1, 'lancamentos')">&#10094;</button>
+          <div class="carousel" id="lancamentos">
+              <!-- Os cards serão gerados dinamicamente aqui -->
           </div>
-
-            <h3 class="list-title">Meus Cursos</h3>
-            <div class="slider responsive">
-     
-              <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card7"></h3></div>
-              <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card8"></h3></div>
-              <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card9"></h3></div>
-              <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card10"></h3></div>
-              <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card11"></h3></div>
-              <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card12"></h3></div>
-            </div>
-            
-            <h3 class="list-title">Em alta</h3>
-            <div class="slider2 responsive">
-              <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card13"></h3></div>
-              <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card14"></h3></div>
-              <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card15"></h3></div>
-              <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card16"></h3></div>
-              <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card17"></h3></div>
-              <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card18"></h3></div>
-            </div>
-
-            <h3 class="list-title">Cursos curto período</h3>
-            <div class="slider responsive">
-              <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card19"></h3></div>
-              <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card20"></h3></div>
-              <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card21"></h3></div>
-              <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card22"></h3></div>
-              <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card23"></h3></div>
-              <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card24"></h3></div>
-            </div>
-
-            <h3 class="list-title">Cursos longo período</h3>
-            <div class="slider responsive">
-              <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card25"></h3></div>
-              <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card26"></h3></div>
-              <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card27"></h3></div>
-              <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card28"></h3></div>
-              <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card29"></h3></div>
-              <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card30"></h3></div>
-            </div>
-
-          </div>
+          <button class="next" onclick="moveCarousel(1, 'lancamentos')">&#10095;</button>
         </div>
-    </div>
+
+        <!-- Contêiner para "Meus Cursos" -->
+        <div class="carousel-container">
+          <h3 class="list-title">Meus Cursos</h3>
+          <button class="prev" onclick="moveCarousel(-1, 'meus-cursos')">&#10094;</button>
+          <div class="carousel" id="meus-cursos">
+              <!-- Os cards serão gerados dinamicamente aqui -->
+          </div>
+          <button class="next" onclick="moveCarousel(1, 'meus-cursos')">&#10095;</button>
+        </div>
+
+        <!-- Contêiner para "Em alta" -->
+        <div class="carousel-container">
+          <h3 class="list-title">Em alta</h3>
+          <button class="prev" onclick="moveCarousel(-1, 'em-alta')">&#10094;</button>
+          <div class="carousel" id="em-alta">
+              <!-- Os cards serão gerados dinamicamente aqui -->
+          </div>
+          <button class="next" onclick="moveCarousel(1, 'em-alta')">&#10095;</button>
+        </div>
+
+        <!-- Contêiner para "Cursos curto período" -->
+        <div class="carousel-container">
+          <h3 class="list-title">Cursos curto período</h3>
+          <button class="prev" onclick="moveCarousel(-1, 'cursos-curto-periodo')">&#10094;</button>
+          <div class="carousel" id="cursos-curto-periodo">
+              <!-- Os cards serão gerados dinamicamente aqui -->
+          </div>
+          <button class="next" onclick="moveCarousel(1, 'cursos-curto-periodo')">&#10095;</button>
+        </div>
+
+        <!-- Contêiner para "Cursos longo período" -->
+        <div class="carousel-container">
+          <h3 class="list-title">Cursos longo período</h3>
+          <button class="prev" onclick="moveCarousel(-1, 'cursos-longo-periodo')">&#10094;</button>
+          <div class="carousel" id="cursos-longo-periodo">
+              <!-- Os cards serão gerados dinamicamente aqui -->
+          </div>
+          <button class="next" onclick="moveCarousel(1, 'cursos-longo-periodo')">&#10095;</button>
+        </div>
+        
+      </div>
 
     <div id="rodape-container"></div> <!-- Aqui será carregado o rodape -->
 
@@ -165,6 +161,7 @@
 <script src="/Frontend/js/login-registro/autenticado.js"></script>
 <script src="/Frontend/js/topbar-rodape/accoutsair.js"></script>
 
+<script src="/Frontend/js/Card/carregarcards.js"></script>
 
 <script>window.history.pushState(null, null, "/Eruditus");</script>
 </html>

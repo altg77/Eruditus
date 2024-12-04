@@ -1,0 +1,73 @@
+/* Estilo para o container do título e select */
+.categoria-container {
+    margin-top: 30px;  /* Espaço no topo */
+    margin-left: 40px; /* Aplica margem apenas a este container */
+    margin-bottom: 60px; /* Espaçamento inferior */
+}
+
+/* Estilo para o título */
+.listatitle {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0; /* Remova margens padrões do h3 */
+}
+
+/* Estilo para o select */
+#categoria-select {
+    padding: 10px 15px; /* Aumenta o tamanho do select */
+    font-size: 1.2rem; /* Torna o texto maior */
+    border-radius: 10px; /* Bordas arredondadas mais suaves */
+    background: #333;
+    color: #fff;
+    border: 1px solid #444;
+    cursor: pointer;
+    margin-top: 30px; /* Adicione espaçamento entre o título e o select */
+}
+
+/* Efeito de foco no select */
+#categoria-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Estilo para hover */
+#categoria-select:hover {
+    border-color: #888;
+}
+
+
+/* Estilo para o contêiner do seletor */
+.actividade-selector {
+    display: flex;
+    justify-content: flex-start; /* Alinha à esquerda */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 5px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    width: fit-content; /* Ajusta a largura ao conteúdo */
+    margin-top: 40px; /* Reduz espaço acima */
+    margin-left: 45px; /* Afasta do canto esquerdo */
+}
+
+/* Remove o label de atividades */
+.actividade-selector label { 
+    display: none; /* Oculta o texto do label */
+}
+
+h3 {
+    font-size: 46px;
+    color: #ffffff;
+}
+
+/* Estilo para o seletor (select) */
+#content-select {
+    padding: 10px 15px; /* Aumenta o tamanho do select */
+    font-size: 1.2rem; /* Torna o texto maior */
+    border-radius: 10px; /* Bordas arredondadas mais suaves */
+    background: #333;
+    color: #fff;
+    border: 1px solid #444;
+    cursor: pointer;
+}
+
