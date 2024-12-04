@@ -1,41 +1,41 @@
 const cursos = [
     // Lançamentos
-    { id: 111, categoria: "Lancamentos", imagem: "/Frontend/img/cards/7.png", link: "/Frontend/detalhes.html" },
-    { id: 121, categoria: "Lancamentos", imagem: "/Frontend/img/cards/4.png" },
-    { id: 131, categoria: "Lancamentos", imagem: "/Frontend/img/cards/2.png" },
-    { id: 141, categoria: "Lancamentos", imagem: "/Frontend/img/cards/2.png" },
-    { id: 151, categoria: "Lancamentos", imagem: "/Frontend/img/cards/2.png" },
-    { id: 161, categoria: "Lancamentos", imagem: "/Frontend/img/cards/2.png" },
-    { id: 161, categoria: "Lancamentos", imagem: "/Frontend/img/cards/2.png" },
+    { id: 111, categoria: "Lancamentos", imagem: "/Frontend/img/cards/14.png", link: "/Frontend/detalhes.html" },
+    { id: 121, categoria: "Lancamentos", imagem: "/Frontend/img/cards/2.png" },
+    { id: 131, categoria: "Lancamentos", imagem: "/Frontend/img/cards/7.png" },
+    { id: 141, categoria: "Lancamentos", imagem: "/Frontend/img/cards/18.png" },
+    { id: 151, categoria: "Lancamentos", imagem: "/Frontend/img/cards/4.png" },
+    { id: 161, categoria: "Lancamentos", imagem: "/Frontend/img/cards/18.png" },
+    { id: 161, categoria: "Lancamentos", imagem: "/Frontend/img/cards/14.png" },
 
     // Meus Cursos
-    { id: 212, categoria: "Meus Cursos", imagem: "/Frontend/img/cards/2.png" },
-    { id: 222, categoria: "Meus Cursos", imagem: "/Frontend/img/cards/2.png" },
+    { id: 212, categoria: "Meus Cursos", imagem: "/Frontend/img/cards/14.png" },
+    { id: 222, categoria: "Meus Cursos", imagem: "/Frontend/img/cards/7.png" },
     { id: 232, categoria: "Meus Cursos", imagem: "/Frontend/img/cards/2.png" },
-    { id: 242, categoria: "Meus Cursos", imagem: "/Frontend/img/cards/2.png" },
-    { id: 243, categoria: "Meus Cursos", imagem: "/Frontend/img/cards/2.png" },
+    { id: 242, categoria: "Meus Cursos", imagem: "/Frontend/img/cards/3.png" },
+    { id: 243, categoria: "Meus Cursos", imagem: "/Frontend/img/cards/10.png" },
 
     // Em Alta
-    { id: 313, categoria: "Em alta", imagem: "/Frontend/img/cards/2.png" },
-    { id: 323, categoria: "Em alta", imagem: "/Frontend/img/cards/25.png" },
-    { id: 333, categoria: "Em alta", imagem: "/Frontend/img/cards/25.png" },
-    { id: 343, categoria: "Em alta", imagem: "/Frontend/img/cards/25.png" },
-    { id: 353, categoria: "Em alta", imagem: "/Frontend/img/cards/25.png" },
+    { id: 313, categoria: "Em alta", imagem: "/Frontend/img/cards/10.png" },
+    { id: 323, categoria: "Em alta", imagem: "/Frontend/img/cards/12.png" },
+    { id: 333, categoria: "Em alta", imagem: "/Frontend/img/cards/13.png" },
+    { id: 343, categoria: "Em alta", imagem: "/Frontend/img/cards/14.png" },
+    { id: 353, categoria: "Em alta", imagem: "/Frontend/img/cards/15.png" },
 
     // Cursos Curto Período
     { id: 414, categoria: "Cursos curto periodo", imagem: "/Frontend/img/cards/2.png" },
-    { id: 424, categoria: "Cursos curto periodo", imagem: "/Frontend/img/cards/2.png" },
-    { id: 434, categoria: "Cursos curto periodo", imagem: "/Frontend/img/cards/2.png" },
-    { id: 444, categoria: "Cursos curto periodo", imagem: "/Frontend/img/cards/2.png" },
-    { id: 454, categoria: "Cursos curto periodo", imagem: "/Frontend/img/cards/2.png" },
+    { id: 424, categoria: "Cursos curto periodo", imagem: "/Frontend/img/cards/3.png" },
+    { id: 434, categoria: "Cursos curto periodo", imagem: "/Frontend/img/cards/4.png" },
+    { id: 444, categoria: "Cursos curto periodo", imagem: "/Frontend/img/cards/7.png" },
+    { id: 454, categoria: "Cursos curto periodo", imagem: "/Frontend/img/cards/8.png" },
 
     // Cursos Longo Período
     { id: 515, categoria: "Cursos longo periodo", imagem: "/Frontend/img/cards/2.png" },
-    { id: 525, categoria: "Cursos longo periodo", imagem: "/Frontend/img/cards/2.png" },
-    { id: 535, categoria: "Cursos longo periodo", imagem: "/Frontend/img/cards/2.png" },
-    { id: 545, categoria: "Cursos longo periodo", imagem: "/Frontend/img/cards/2.png" },
-    { id: 555, categoria: "Cursos longo periodo", imagem: "/Frontend/img/cards/2.png" },
-    { id: 565, categoria: "Cursos longo periodo", imagem: "/Frontend/img/cards/2.png" },
+    { id: 525, categoria: "Cursos longo periodo", imagem: "/Frontend/img/cards/13.png" },
+    { id: 535, categoria: "Cursos longo periodo", imagem: "/Frontend/img/cards/18.png" },
+    { id: 545, categoria: "Cursos longo periodo", imagem: "/Frontend/img/cards/12.png" },
+    { id: 555, categoria: "Cursos longo periodo", imagem: "/Frontend/img/cards/16.png" },
+    { id: 565, categoria: "Cursos longo periodo", imagem: "/Frontend/img/cards/11.png" },
 ];
 
 function gerarCards() {
