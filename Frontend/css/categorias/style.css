@@ -15,7 +15,6 @@
 
 /* Estilo para o select */
 #categoria-select {
-    padding: 10px 15px; /* Aumenta o tamanho do select */
     font-size: 1.2rem; /* Torna o texto maior */
     border-radius: 10px; /* Bordas arredondadas mais suaves */
     background: #333;
@@ -61,7 +60,7 @@ h3 {
 }
 
 /* Estilo para o seletor (select) */
-#content-select {
+#categoria-select {
     padding: 10px 15px; /* Aumenta o tamanho do select */
     font-size: 1.2rem; /* Torna o texto maior */
     border-radius: 10px; /* Bordas arredondadas mais suaves */

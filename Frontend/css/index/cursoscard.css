@@ -37,9 +37,9 @@
 
 .carousel .card {
   margin-top: 15px;
-  min-width: calc(20% - 10px);  /* Ajuste a largura para levar em conta a margem */
-  max-width: calc(20% - 10px);  /* Ajuste a largura para levar em conta a margem */
-  margin-right: 12px;  /* Espaço entre os cards */
+  min-width: calc(20% - 13px);  /* Ajuste a largura para levar em conta a margem */
+  max-width: calc(20% - 13px);  /* Ajuste a largura para levar em conta a margem */
+  margin-right: 14px;  /* Espaço entre os cards */
   box-sizing: border-box;
   position: relative;
   border-radius: 7px;
@@ -53,7 +53,7 @@
 }
 
 .carousel .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.04);
   transform-origin: center;
 }
 
@@ -83,7 +83,7 @@
   transform: scale(1.05);
 }
 
-button {
+.carousel-container button {
   position: absolute;
   top: 60%;
   transform: translateY(-50%);
@@ -97,14 +97,14 @@ button {
   transition: background-color 0.3s ease;
 }
 
-button:hover {
+.carousel-container button:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-button.prev {
+.carousel-container button.prev {
   left: 10px;
 }
 
-button.next {
+.carousel-container button.next {
   right: 10px;
 }
