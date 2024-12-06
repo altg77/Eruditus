@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/Frontend/css/categorias/cards.css">
 
 
+
     <!-- CSS CONFIGURAR TOPBAR -->
     <link rel="stylesheet" href="/Frontend/css/Topbar-rodape/configuretop.css">
 
@@ -34,19 +35,24 @@
 <!-- CURSOS CARD -->
 
 <!-- Título principal e Select -->
-<div class="categoria-container">
-    <h1 id="listatitle"></h1>
+    <div class="categoria-container">
+        <h1 class="titulo" id="listatitle"></h1>
 
-    <select id="categoria-select" onchange="">
-        <option value="todos">Todos conteúdos</option>
-        <option value="em-alta">Em alta</option>
-        <option value="curto-periodo">Cursos curto período</option>
-        <option value="longo-periodo">Cursos longo período</option>
-    </select>
+        <select id="categoria-select" onchange="">
+          <option value="todos">Todos conteúdos</option>
+          <option value="em-alta">Em alta</option>
+          <option value="curto-periodo">Cursos curto período</option>
+          <option value="longo-periodo">Cursos longo período</option>
+      </select>
 
-    <div id="cards-container" class="grid"></div>
+    <div class="alinha-cards">
+        <div class="grid" id="cards-container">
+          <!-- Os cards serão gerados dinamicamente aqui -->
+        </div>
 
-</div>
+      </div>
+    </div>
+    
 
 
 <div id="rodape-container"></div> <!-- Aqui será carregado o rodape -->
@@ -68,19 +74,11 @@
 
 <!-- Filtrador -->
 <script src="/Frontend/js/Card/filtradorcategoria.js"></script>
-<script src="/Frontend//js/Card/gerarcards.js"></script>
+<script src="/Frontend//js/Card/teste.js"></script>
 
 <script>// Função principal chamada quando a página é carregada
   document.addEventListener("DOMContentLoaded", () => {
-      const categoria = getCategoriaDaURL(); // Obtém a categoria da URL
-
-       // Define o título da categoria
-      const titleElement = document.getElementById("listatitle");
-      titleElement.textContent = categoria ? categoria.replace('-', ' ') : "Todos os conteúdos";
-
-      const cursosFiltrados = filtrarCursosPorCategoria(categoria); // Filtra os cursos
-      gerarCardsParaCategorias(cursosFiltrados); // Gera os cards
-    
+    gerarCards();
   });
   </script>
 
