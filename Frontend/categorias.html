@@ -14,8 +14,9 @@
     <!-- Styles CSS -->
     <link rel="stylesheet" href="/Frontend/css/index/bannerslide.css">
     <link rel="stylesheet" href="/Frontend/css/index/reset.css">
-    <link rel="stylesheet" href="/Frontend/css/index/cursoscard.css">
     <link rel="stylesheet" href="/Frontend/css/categorias/style.css">
+    <link rel="stylesheet" href="/Frontend/css/categorias/cards.css">
+
 
     <!-- CSS CONFIGURAR TOPBAR -->
     <link rel="stylesheet" href="/Frontend/css/Topbar-rodape/configuretop.css">
@@ -34,63 +35,19 @@
 
 <!-- Título principal e Select -->
 <div class="categoria-container">
-    <h3 class="listatitle">Programação</h3>
-    <select id="categoria-select" onchange="filtrarConteudo()">
+    <h1 id="listatitle"></h1>
+
+    <select id="categoria-select" onchange="">
         <option value="todos">Todos conteúdos</option>
         <option value="em-alta">Em alta</option>
         <option value="curto-periodo">Cursos curto período</option>
         <option value="longo-periodo">Cursos longo período</option>
     </select>
+
+    <div id="cards-container" class="grid"></div>
+
 </div>
 
-<div class="main movies-rows">
-    <div class="slider responsive">
-      <div class="card">
-        <h3><img src="/Frontend/img/cards/14.png" alt= "Card1"></h3></div>
-
-      <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card2" ></h3></div>
-      <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card3"></h3></div>
-      <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card4"></h3></div>
-      <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card5"></h3></div>
-    </div>
-
-      <div class="slider responsive">
-
-        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card7"></h3></div>
-        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card8"></h3></div>
-        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card9"></h3></div>
-        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card10"></h3></div>
-        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card11"></h3></div>
-      </div>
-      
-      <div class="slider responsive">
-
-        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card7"></h3></div>
-        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card8"></h3></div>
-        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card9"></h3></div>
-        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card10"></h3></div>
-        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card11"></h3></div>
-      </div>
-
-      <div class="slider responsive">
-        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card19"></h3></div>
-        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card20"></h3></div>
-        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card21"></h3></div>
-        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card22"></h3></div>
-        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card23"></h3></div>
-      </div>
-
-      <div class="slider responsive">
-        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card25"></h3></div>
-        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card26"></h3></div>
-        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card27"></h3></div>
-        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card28"></h3></div>
-        <div class="card"><h3><img src="/Frontend/img/cards/14.png" alt= "Card29"></h3></div>
-      </div>
-
-    </div>
-  </div>
-</div>
 
 <div id="rodape-container"></div> <!-- Aqui será carregado o rodape -->
 
@@ -109,7 +66,22 @@
 <script src="/Frontend/js/login-registro/autenticado.js"></script>
 <script src="/Frontend/js/topbar-rodape/accoutsair.js"></script>
 
+<!-- Filtrador -->
+<script src="/Frontend/js/Card/filtradorcategoria.js"></script>
+<script src="/Frontend//js/Card/gerarcards.js"></script>
 
-<script>window.history.pushState(null, null, "/Eruditus/service");</script>
+<script>// Função principal chamada quando a página é carregada
+  document.addEventListener("DOMContentLoaded", () => {
+      const categoria = getCategoriaDaURL(); // Obtém a categoria da URL
+
+       // Define o título da categoria
+      const titleElement = document.getElementById("listatitle");
+      titleElement.textContent = categoria ? categoria.replace('-', ' ') : "Todos os conteúdos";
+
+      const cursosFiltrados = filtrarCursosPorCategoria(categoria); // Filtra os cursos
+      gerarCardsParaCategorias(cursosFiltrados); // Gera os cards
+    
+  });
+  </script>
 
 </html>

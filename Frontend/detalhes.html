@@ -18,36 +18,34 @@
     <div id="topbar-container"></div> <!-- Aqui será carregado o topbar -->
 
     <!-- Conteúdo principal -->
+
     <div class="detail-container">
         <div class="info">
-            <h1 class="title">Poder da Venda</h1>
-            <p class="subtitle">+2.000 de INDICAÇÕES | Alicia Martins®</p>
+            <h1 class="title" id="curso-title"></h1>
+            <p class="subtitle" id="curso-description"></p>
 
             <div class="season-selector">
                 <label for="season-select">Temporadas</label>
                 <select id="season-select" onchange="showEpisodes()">
                     <option value="1">Temporada 1</option>
                     <option value="2">Temporada 2</option>
+                    <option value="3">Temporada 3</option>
+                    <option value="4">Temporada 4</option>
+                    <option value="5">Temporada 5</option>
+                    <option value="6">Temporada 6</option>
+                    <option value="7">Temporada 7</option>
+                    <option value="8">Temporada 8</option>
+                    <option value="9">Temporada 9</option>
+                    <option value="10">Temporada 10</option>
+                    <option value="11">Temporada 11</option>
+                    <option value="12">Temporada 12</option>
                 </select>
             </div>
 
-            <p class="description">
-                Descubra os segredos das vendas de alto impacto com o curso O Poder da Venda. 
-                Aprenda técnicas comprovadas para conquistar clientes, superar objeções e criar relacionamentos duradouros. 
-                Com estratégias práticas e insights poderosos, você estará preparado para alcançar resultados excepcionais e 
-                transformar sua abordagem comercial. Não importa seu nível de experiência, este curso é o guia definitivo 
-                para dominar a arte de vender e expandir suas oportunidades de sucesso.
-            </p>
-            <div class="metadata">
-                <span>2005</span>
-                <span>- 2 Temporadas | 6 Episódios </span>
-            </div>
-            <div class="tags">
-                <span>6 Atividades</span>
-                <span>17,5 Horas de vídeo</span>
-                <span>14 Recursos e atividades</span>
-                <span>Certificado</span>
-            </div>
+            <p class="description" id="curso-description"></p>
+            <div class="metadata" id="curso-metadata"></div>
+            <div class="tags" id="curso-tags"></div>
+
             <div class="buttons">
                 <button class="watch-now">Começe assitir as aulas</button>
                 <button class="buy-options">Adicionar ao carrinho</button>
@@ -79,8 +77,6 @@
 
 </body>
 
-<script>window.history.pushState(null, null, "/Eruditus/details");</script>
-
 <!-- Scripts de authenticação, topbar e rodape -->
 <script src="/Frontend/js/topbar-rodape/rodape.js"></script>
 <script src="/Frontend/js/login-registro/autenticado.js"></script>
@@ -93,6 +89,8 @@
 <script src="/Frontend/js/detalhes/atividades.js"></script>
 <script src="/Frontend/js/detalhes/sobre.js"></script>
 <script src="/Frontend/js/detalhes/configurar.js"></script>
+
+<script src="/Frontend/js/Card/carregardetalhes.js"></script>
 
 <script>window.onload = showEpisodes;</script>
 <script>toggleOculta();</script>

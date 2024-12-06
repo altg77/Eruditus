@@ -1,0 +1,66 @@
+
+  /* Contêiner principal dos cards */
+  #cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  
+.listatitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    padding-left: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Estilo dos cards individuais */
+  .card {
+    background: #1e1e1e; /* Fundo escuro para o card */
+    border-radius: 10px;
+    overflow: hidden;
+    width: calc(20% - 13px); /* 20% do contêiner com espaçamento ajustado */
+    min-width: 180px; /* Largura mínima para responsividade */
+    max-width: 240px; /* Largura máxima */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Estilo para a imagem dentro do card */
+  .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Garante que a imagem preencha o card */
+    border-bottom: 4px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Adicionar animação de borda no hover */
+  .card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 4px solid rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    transition: border 0.3s ease-in-out;
+    z-index: 1;
+  }
+  
+  .card:hover::before {
+    border: 4px solid rgba(249, 249, 249, 0.8);
+  }
