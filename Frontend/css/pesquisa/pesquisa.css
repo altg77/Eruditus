@@ -17,7 +17,7 @@
     justify-content: space-between; /* Espaçamento entre os elementos */
     align-items: center; /* Alinhamento vertical centralizado */
     position: absolute;
-    top: 15%;
+    top: 3%;
     left: 50%;
     transform: translateX(-50%);
     width: 60%;
