@@ -12,6 +12,10 @@
 
 /* Contêiner principal */
 #pesquisa-container {
+    display: flex; /* Flexbox para alinhamento horizontal */
+    flex-direction: row; /* Itens alinhados na mesma linha */
+    justify-content: space-between; /* Espaçamento entre os elementos */
+    align-items: center; /* Alinhamento vertical centralizado */
     position: absolute;
     top: 15%;
     left: 50%;
@@ -25,9 +29,9 @@
     color: #fff; /* Texto branco */
 }
 
-/* Input de pesquisa */
+/* Input de pesquisa (ocupa o espaço maior) */
 #pesquisa-input {
-    width: 100%;
+    flex: 1; /* Ocupa o máximo de espaço disponível */
     padding: 12px;
     font-size: 16px;
     color: #fff;
@@ -35,6 +39,7 @@
     border: 1px solid #444;
     border-radius: 4px;
     outline: none;
+    margin-right: 10px; /* Espaçamento entre input e botão */
 }
 
 /* Estilo para sugestões */
@@ -59,32 +64,34 @@
     background: #444;
 }
 
+/* Contêiner dos botões */
+#pesquisa-botoes {
+    display: flex; /* Botões lado a lado */
+    justify-content: space-between;
+    gap: 14px; /* Espaçamento entre botões */
+}
+
+
 /* Botão para limpar pesquisa */
 #pesquisa-limpar {
-    margin-top: 15px;
-    padding: 10px;
-    background: #007bff;
-    color: white;
+    padding: 10px 20px; /* Botão ajustado */
+    background: #008839;
+    color: black;
     border: none;
     border-radius: 4px;
     font-size: 14px;
     cursor: pointer;
-    width: 100%;
     transition: background 0.3s ease;
 }
 
-#pesquisa-limpar:hover {
-    background: #0056b3;
-}
-
 /* Botão para fechar a pesquisa */
-#pesquisa-container button {
-    margin-top: 15px;
-    padding: 12px 24px; /* Botão maior */
-    background: #007bff;
-    color: white;
+#pesquisa-fechar {
+    padding: 10px 20px; /* Botão ajustado */
+    background: #008839;
+    color: black;
     border: none;
-    border-radius: 6px;
-    font-size: 16px; /* Texto maior no botão */
+    border-radius: 4px;
+    font-size: 14px;
     cursor: pointer;
+    transition: background 0.3s ease;
 }

@@ -5,15 +5,12 @@
 <div id="pesquisa-overlay">
     <div id="pesquisa-container">
         <input type="text" id="pesquisa-input" placeholder="Digite sua pesquisa..." />
-        <button id="pesquisa-limpar">Limpar</button>
+        <div id="pesquisa-botoes">
+            <button id="pesquisa-limpar">Limpar</button>
+            <button id="pesquisa-fechar" onclick="fecharPesquisa()">Fechar</button>
+        </div>
         <ul id="sugestoes-list">
-            <li>The Boys</li>
-            <li>The Walking Dead</li>
-            <li>The Vampire Diaries</li>
-            <li>The Rings of Power</li>
-            <li>The Office</li>
         </ul>
-        <button onclick="fecharPesquisa()">Fechar</button>
     </div>
 </div>
 
