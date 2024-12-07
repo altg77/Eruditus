@@ -5,8 +5,8 @@ const cursos = [
         subtitle: "Pensando como um programador desde o início.",
         description: "Desenvolva habilidades de raciocínio lógico e aprenda os fundamentos da programação de forma prática e acessível. Este curso é ideal para iniciantes que desejam construir a base para qualquer linguagem de programação.",
         imagem: "/Frontend/img/cards/2.png",
-        lammecs: ["lancamentos", "Cursos-longo-periodo", "Meus-cursos"],
-        categoria: "programação",
+        lammecs: ["Lancamentos", "Cursos-longo-periodo", "Meus-cursos"],
+        categoria: "Programação",
         metadata: {
             anoLancamento: 2005, 
             temporadas: 5, 
@@ -21,7 +21,7 @@ const cursos = [
         description: "Aprenda como configurar processos automatizados para vendas e melhore sua produtividade. Este curso fornece estratégias práticas para maximizar suas vendas com o mínimo de esforço manual.",
         imagem: "/Frontend/img/cards/3.png",
         lammecs: ["em-alta", "Cursos-curto-periodo"],
-        categoria: "Vendas",
+        categoria: "Negócios e Finanças",
         metadata: {
             anoLancamento: 2023,
             temporadas: 1,
@@ -36,7 +36,7 @@ const cursos = [
         description: "Descubra os segredos de vendas que realmente funcionam. Ideal para quem quer se destacar no mercado competitivo.",
         imagem: "/Frontend/img/cards/14.png",
         lammecs: ["em-alta", "meus-cursos", "cursos-curto-periodo", "lancamentos"],
-        categoria: "Vendas",
+        categoria: "Negócios e Finanças",
         metadata: {
             anoLancamento: 2024,
             temporadas: 1,
@@ -66,7 +66,7 @@ const cursos = [
         description: "Domine técnicas de adestramento que ajudam no comportamento e na interação dos cães com seus tutores.",
         imagem: "/Frontend/img/cards/18.png",
         lammecs: ["lancamentos", "cursos-curto-periodo"],
-        categoria: "Pets",
+        categoria: "Ensino e estudo acadêmico",
         metadata: {
             anoLancamento: 2024,
             temporadas: 1,
@@ -81,7 +81,7 @@ const cursos = [
         description: "Aprenda desde a criação de conteúdo até a monetização de vídeos na maior plataforma de streaming do mundo.",
         imagem: "/Frontend/img/cards/4.png",
         lammecs: ["em-alta", "lancamentos", "cursos-longo-periodo"],
-        categoria: "Mídias Digitais",
+        categoria: "Fotografia e vídeo",
         metadata: {
             anoLancamento: 2024,
             temporadas: 1,
@@ -96,7 +96,7 @@ const cursos = [
         description: "Desde o básico até a publicação na Play Store e App Store, este curso aborda tudo o que você precisa para criar apps.",
         imagem: "/Frontend/img/cards/10.png",
         lammecs: ["meus-cursos", "cursos-longo-periodo", "em-alta"],
-        categoria: "Tecnologia",
+        categoria: "Programação",
         metadata: {
             anoLancamento: 2022,
             temporadas: 3,
@@ -111,7 +111,7 @@ const cursos = [
         description: "Entenda os fundamentos da fotografia e as técnicas que fazem a diferença para amadores e profissionais.",
         imagem: "/Frontend/img/cards/16.png",
         lammecs: ["cursos-curto-periodo"],
-        categoria: "Arte e Design",
+        categoria: "Fotografia e Vídeo",
         metadata: {
             anoLancamento: 2023,
             temporadas: 2,
@@ -157,7 +157,7 @@ const cursos = [
         description: "Aprimore suas habilidades em inglês com foco em conversação, escrita e compreensão avançada.",
         imagem: "/Frontend/img/cards/12.png",
         lammecs: ["em-alta","lancamentos", "cursos-longo-periodo"],
-        categoria: "Idiomas",
+        categoria: "Ensino e estudo acadêmico",
         metadata: {
             anoLancamento: 2023,
             temporadas: 1,
@@ -172,7 +172,7 @@ const cursos = [
         description: "Aprenda a criar modelos de projetos eficazes para diversas áreas utilizando ferramentas e técnicas modernas.",
         imagem: "/Frontend/img/cards/8.png",
         lammecs: ["cursos-curto-periodo"],
-        categoria: "Gestão",
+        categoria: "Projetos",
         metadata: {
             anoLancamento: 2024,
             temporadas: 1,
@@ -202,7 +202,7 @@ const cursos = [
         description: "Aprenda os conceitos básicos e avançados de IA, incluindo machine learning e redes neurais.",
         imagem: "/Frontend/img/cards/13.png",
         lammecs: ["meus-cursos", "cursos-longo-periodo"],
-        categoria: "Tecnologia",
+        categoria: "Tecnologia da informação",
         metadata: {
             anoLancamento: 2024,
             temporadas: 3,
@@ -217,7 +217,7 @@ const cursos = [
         description: "Entenda como investir de forma consciente em ações, renda fixa e outros mercados financeiros.",
         imagem: "/Frontend/img/cards/11.png",
         lammecs: ["em-alta", "cursos-curto-periodo"],
-        categoria: "Finanças",
+        categoria: "Negócios e finanças",
         metadata: {
             anoLancamento: 2024,
             temporadas: 2,
@@ -232,7 +232,7 @@ const cursos = [
         description: "Aprenda a criar, administrar e otimizar bancos de dados relacionais e não relacionais.",
         imagem: "/Frontend/img/cards/21.png",
         lammecs: ["lancamento", "cursos-longo-periodo"],
-        categoria: "Tecnologia",
+        categoria: "Ciência de dados",
         metadata: {
             anoLancamento: 2024,
             temporadas: 1,
@@ -247,7 +247,7 @@ const cursos = [
         description: "Explore técnicas avançadas para criar ilustrações impressionantes usando ferramentas digitais e tradicionais.",
         imagem: "/Frontend/img/cards/22.png",
         lammecs: ["em-alta", "cursos-curto-periodo"],
-        categoria: "Arte e Design",
+        categoria: "Design",
         metadata: {
             anoLancamento: 2024,
             temporadas: 1,
@@ -262,7 +262,7 @@ const cursos = [
         description: "Descubra como projetar e desenvolver jogos para diversas plataformas, utilizando engines populares como Unity e Unreal.",
         imagem: "/Frontend/img/cards/15.png",
         lammecs: ["lancamento", "cursos-longo-periodo"],
-        categoria: "Tecnologia",
+        categoria: "Programação",
         metadata: {
             anoLancamento: 2023,
             temporadas: 1,
@@ -289,10 +289,10 @@ function gerarCards() {
             card.innerHTML = `
                 <img src="${curso.imagem}" alt="Curso ${curso.categoria}">
             `;
-
-            card.addEventListener("click", () => {
-                // Criação dos parâmetros que vamos passar na URL
+        // Criação dos parâmetros que vamos passar na URL
                 const urlParams = new URLSearchParams();
+        
+            card.addEventListener("click", () => {
                 urlParams.append('id', curso.id);
                 urlParams.append('title', curso.title);
                 urlParams.append('title', curso.title);
@@ -366,9 +366,7 @@ function moveCarousel(direction, lamecc) {
 }
 
 
-//PARA CATEGORORIAS
-
-
+//PARA CATEGORIAS
 // Extrai o parâmetro 'categoria' da URL
 function getCategoriaDaURL() {
     const urlParams = new URLSearchParams(window.location.search);
@@ -382,7 +380,7 @@ function filtrarCursosPorCategoria(categoria) {
 
 // Gera os cards para a página categorias.html
 function gerarCardsParaCategorias(cursosFiltrados) {
-    const container = document.getElementById("cards-container"); // Contêiner para os cards
+    const container = document.querySelector("#container"); // Contêiner onde os cards serão exibidos
     container.innerHTML = ""; // Limpa os cards existentes
 
     cursosFiltrados.forEach(curso => {
@@ -398,9 +396,58 @@ function gerarCardsParaCategorias(cursosFiltrados) {
             const urlParams = new URLSearchParams();
             urlParams.append('id', curso.id);
             urlParams.append('title', curso.title);
-            urlParams.append('imagem', curso.imagem);
+            urlParams.append('title', curso.title);
+            urlParams.append('imagem', curso.imagem); 
             urlParams.append('categoria', curso.categoria);
             urlParams.append('description', curso.description);
+            urlParams.append('metadata', JSON.stringify(curso.metadata)); // Enviar os metadados como JSON
+            urlParams.append('tags', curso.tags.join(", ")); // Convertendo o array de tags em string
+
+            // Redireciona para detalhes.html
+            window.location.href = `/Frontend/detalhes.html?${urlParams.toString()}`;
+        });
+
+        container.appendChild(card); // Adiciona o card ao contêiner
+    });
+}
+
+
+//PARA LAMMECS
+// Extrai o parâmetro 'categoria' da URL
+function getLammecsDaURL() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get('lammecs');
+}
+
+// Filtra os cursos pela lammecs
+function filtrarCursosPorLammecs(lammecs) {
+    return cursos.filter(curso => curso.lammecs.some(item => item.toLowerCase() === lammecs.toLowerCase()));
+}
+
+// Gera os cards para a página categorias.html
+function gerarCardsParaLammecs(lammecFiltrados) {
+    const container = document.querySelector("#container"); // Contêiner onde os cards serão exibidos
+    container.innerHTML = ""; // Limpa os cards existentes
+
+    lammecFiltrados.forEach(curso => {
+        const card = document.createElement("div");
+        card.className = "card";
+
+        card.innerHTML = `
+            <img src="${curso.imagem}" alt="${curso.categoria}">
+        `;
+
+        // Adiciona o evento de clique para redirecionar à página de detalhes
+        card.addEventListener("click", () => {
+            const urlParams = new URLSearchParams();
+            urlParams.append('id', curso.id);
+            urlParams.append('title', curso.title);
+            urlParams.append('title', curso.title);
+            urlParams.append('imagem', curso.imagem); 
+            urlParams.append('categoria', curso.categoria);
+            urlParams.append('description', curso.description);
+            urlParams.append('metadata', JSON.stringify(curso.metadata)); // Enviar os metadados como JSON
+            urlParams.append('tags', curso.tags.join(", ")); // Convertendo o array de tags em string
 
             // Redireciona para detalhes.html
             window.location.href = `/Frontend/detalhes.html?${urlParams.toString()}`;

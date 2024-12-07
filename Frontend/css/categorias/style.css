@@ -1,12 +1,5 @@
-/* Estilo para o container do título e select */
-.categoria-container {
-    margin-top: 30px;  /* Espaço no topo */
-    margin-left: 40px; /* Aplica margem apenas a este container */
-    margin-bottom: 60px; /* Espaçamento inferior */
-}
-
 /* Estilo para o título */
-.listatitle {
+.titulo {
     font-size: 40px;
     font-weight: bold;
     color: #ffffff;

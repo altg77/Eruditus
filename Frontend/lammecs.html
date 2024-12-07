@@ -73,13 +73,13 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-  const categoria = getCategoriaDaURL();
+  const lammecs = getLammecsDaURL();
 
   const titulo = document.getElementById("listatitle");
-  titulo.textContent = `${categoria}`;
+  titulo.textContent = `${lammecs}`;
 
-  const cursosFiltrados = filtrarCursosPorCategoria(categoria);
-  gerarCardsParaCategorias(cursosFiltrados);
+  const lammecFiltrados = filtrarCursosPorLammecs(lammecs);
+  gerarCardsParaLammecs(lammecFiltrados);
   
 });
 </script>
