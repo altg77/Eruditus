@@ -457,3 +457,50 @@ function gerarCardsParaLammecs(lammecFiltrados) {
     });
 }
 
+//PARA PESQUISAS
+// Exibe o overlay da pesquisa
+function abrirPesquisa() {
+    document.getElementById('pesquisa-overlay').style.display = 'block';
+}
+
+// Fecha o overlay da pesquisa
+function fecharPesquisa() {
+    document.getElementById('pesquisa-overlay').style.display = 'none';
+}
+
+// Atualiza a lista de sugestões enquanto o usuário digita
+document.getElementById('pesquisa-input').addEventListener('input', function () {
+    const input = this.value.toLowerCase();
+    const sugestoesList = document.getElementById('sugestoes-list');
+    sugestoesList.innerHTML = ''; // Limpa sugestões anteriores
+
+    if (input) {
+        const sugestoes = cursos.filter(curso => curso.title.toLowerCase().includes(input));
+        sugestoes.forEach(curso => {
+            const li = document.createElement('li');
+            li.textContent = curso.title;
+            li.style.cursor = "pointer";
+            li.style.padding = "5px 10px";
+            li.style.border = "1px solid #ccc";
+            li.style.borderRadius = "4px";
+            li.style.marginBottom = "5px";
+            li.style.background = "#f9f9f9";
+
+            li.addEventListener('click', () => {
+                // Redireciona para pesquisas.html com os parâmetros do curso
+                const urlParams = new URLSearchParams({
+                    id: curso.id,
+                    title: curso.title,
+                    categoria: curso.categoria,
+                    imagem: curso.imagem,
+                    description: curso.description
+                });
+                window.location.href = `/Frontend/pesquisas.html?${urlParams.toString()}`;
+            });
+
+            sugestoesList.appendChild(li);
+        });
+    }
+});
+
+

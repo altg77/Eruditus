@@ -26,7 +26,8 @@
 
 </head>
 <body>
-
+  <div id="pesquisatop-placeholder"></div>
+  
   <div id="topbar-container"></div> <!-- Aqui será carregado o topbar -->
 
     <!-- Secion Banner -->
@@ -171,6 +172,14 @@
       });
   });
   </script>
+
+<script>
+    fetch('/Frontend/html/pesquisatop.html')
+            .then(response => response.text())
+            .then(html => {
+            document.getElementById('pesquisatop-placeholder').innerHTML = html;
+      });
+</script>
 
 <!-- Redirecionador -->
 <script src="/Frontend/js/Card/redirecionador.js"></script>
