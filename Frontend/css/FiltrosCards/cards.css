@@ -13,14 +13,17 @@
 
 .cards-container {
   display: flex;
+  flex-wrap: wrap; /* Permitir quebra de linha */
+  justify-content: flex-start; /* Alinhar os cards à esquerda */
+  gap: 14px; /* Espaçamento entre os cards */
   transition: transform 0.5s ease-in-out;
 }
 
 .cards-container .card {
+  flex: 1 1 calc(20% - 14px); /* Permitir redimensionamento e respeitar o espaço */
+  max-width: calc(20% - 14px); /* Garantir um tamanho máximo */
+  min-width: 250px; /* Tamanho mínimo para evitar cards muito pequenos */
   margin-top: 15px;
-  min-width: calc(20% - 13px);  /* Ajuste a largura para levar em conta a margem */
-  max-width: calc(20% - 13px);  /* Ajuste a largura para levar em conta a margem */
-  margin-right: 14px;  /* Espaço entre os cards */
   box-sizing: border-box;
   position: relative;
   border-radius: 7px;

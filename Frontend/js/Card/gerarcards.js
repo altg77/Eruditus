@@ -5,7 +5,7 @@ const cursos = [
         subtitle: "Pensando como um programador desde o início.",
         description: "Desenvolva habilidades de raciocínio lógico e aprenda os fundamentos da programação de forma prática e acessível. Este curso é ideal para iniciantes que desejam construir a base para qualquer linguagem de programação.",
         imagem: "/Frontend/img/cards/2.png",
-        lammecs: ["Lancamentos", "Cursos-longo-periodo", "Meus-cursos"],
+        lammecs: ["Lancamentos", "Cursos longo periodo", "Meus cursos"],
         categoria: "Programação",
         metadata: {
             anoLancamento: 2005, 
@@ -20,7 +20,7 @@ const cursos = [
         subtitle: "Aumente suas vendas com estratégias automáticas.",
         description: "Aprenda como configurar processos automatizados para vendas e melhore sua produtividade. Este curso fornece estratégias práticas para maximizar suas vendas com o mínimo de esforço manual.",
         imagem: "/Frontend/img/cards/3.png",
-        lammecs: ["em-alta", "Cursos-curto-periodo"],
+        lammecs: ["Em alta", "Cursos curto periodo"],
         categoria: "Negócios e Finanças",
         metadata: {
             anoLancamento: 2023,
@@ -35,7 +35,7 @@ const cursos = [
         subtitle: "+2.000 de INDICAÇÕES | Alicia Martins®",
         description: "Descubra os segredos de vendas que realmente funcionam. Ideal para quem quer se destacar no mercado competitivo.",
         imagem: "/Frontend/img/cards/14.png",
-        lammecs: ["em-alta", "meus-cursos", "cursos-curto-periodo", "lancamentos"],
+        lammecs: ["Em alta", "Meus cursos", "cursos curto periodo", "Lancamentos"],
         categoria: "Negócios e Finanças",
         metadata: {
             anoLancamento: 2024,
@@ -50,7 +50,7 @@ const cursos = [
         subtitle: "Domine as estratégias digitais.",
         description: "Aprenda SEO, marketing de redes sociais e estratégias pagas para se tornar um profissional de marketing digital de destaque.",
         imagem: "/Frontend/img/cards/7.png",
-        lammecs: ["em-alta", "meus-cursos", "cursos-curto-periodo"],
+        lammecs: ["Em alta", "Meus cursos", "cursos curto periodo"],
         categoria: "Marketing",
         metadata: {
             anoLancamento: 2024,
@@ -65,7 +65,7 @@ const cursos = [
         subtitle: "Treine cães como um profissional.",
         description: "Domine técnicas de adestramento que ajudam no comportamento e na interação dos cães com seus tutores.",
         imagem: "/Frontend/img/cards/18.png",
-        lammecs: ["lancamentos", "cursos-curto-periodo"],
+        lammecs: ["Lancamentos", "cursos curto periodo"],
         categoria: "Ensino e estudo acadêmico",
         metadata: {
             anoLancamento: 2024,
@@ -80,7 +80,7 @@ const cursos = [
         subtitle: "Destaque-se no mundo do YouTube.",
         description: "Aprenda desde a criação de conteúdo até a monetização de vídeos na maior plataforma de streaming do mundo.",
         imagem: "/Frontend/img/cards/4.png",
-        lammecs: ["em-alta", "lancamentos", "cursos-longo-periodo"],
+        lammecs: ["Em alta", "Lancamentos", "cursos longo periodo"],
         categoria: "Fotografia e vídeo",
         metadata: {
             anoLancamento: 2024,
@@ -95,7 +95,7 @@ const cursos = [
         subtitle: "Desenvolva seus próprios aplicativos.",
         description: "Desde o básico até a publicação na Play Store e App Store, este curso aborda tudo o que você precisa para criar apps.",
         imagem: "/Frontend/img/cards/10.png",
-        lammecs: ["meus-cursos", "cursos-longo-periodo", "em-alta"],
+        lammecs: ["Meus cursos", "cursos longo periodo", "Em alta"],
         categoria: "Programação",
         metadata: {
             anoLancamento: 2022,
@@ -110,7 +110,7 @@ const cursos = [
         subtitle: "Transforme cliques em arte.",
         description: "Entenda os fundamentos da fotografia e as técnicas que fazem a diferença para amadores e profissionais.",
         imagem: "/Frontend/img/cards/16.png",
-        lammecs: ["cursos-curto-periodo"],
+        lammecs: ["Cursos curto periodo"],
         categoria: "Fotografia e Vídeo",
         metadata: {
             anoLancamento: 2023,
@@ -125,7 +125,7 @@ const cursos = [
         subtitle: "Explore o mundo do design criativo.",
         description: "Aprenda ferramentas como Photoshop, Illustrator e Canva para criar peças incríveis.",
         imagem: "/Frontend/img/cards/6.png",
-        lammecs: ["em-alta", "cursos-curto-periodo"],
+        lammecs: ["Em alta", "cursos curto periodo"],
         categoria: "Design",
         metadata: {
             anoLancamento: 2023,
@@ -140,7 +140,7 @@ const cursos = [
         subtitle: "Saúde e bem-estar para o dia a dia.",
         description: "Estratégias práticas de exercícios físicos e nutrição para melhorar sua qualidade de vida.",
         imagem: "/Frontend/img/cards/19.png",
-        lammecs: ["em-alta", "cursos-curto-periodo"],
+        lammecs: ["Em alta", "cursos curto periodo"],
         categoria: "Saúde",
         metadata: {
             anoLancamento: 2022,
@@ -156,7 +156,7 @@ const cursos = [
         subtitle: "Domine o idioma com fluência e confiança.",
         description: "Aprimore suas habilidades em inglês com foco em conversação, escrita e compreensão avançada.",
         imagem: "/Frontend/img/cards/12.png",
-        lammecs: ["em-alta","lancamentos", "cursos-longo-periodo"],
+        lammecs: ["Em alta","Lancamentos", "cursos longo periodo"],
         categoria: "Ensino e estudo acadêmico",
         metadata: {
             anoLancamento: 2023,
@@ -171,7 +171,7 @@ const cursos = [
         subtitle: "Estruture suas ideias como um profissional.",
         description: "Aprenda a criar modelos de projetos eficazes para diversas áreas utilizando ferramentas e técnicas modernas.",
         imagem: "/Frontend/img/cards/8.png",
-        lammecs: ["cursos-curto-periodo"],
+        lammecs: ["Cursos curto periodo"],
         categoria: "Projetos",
         metadata: {
             anoLancamento: 2024,
@@ -186,7 +186,7 @@ const cursos = [
         subtitle: "Domine os acordes e ritmos.",
         description: "Inicie sua jornada musical com um guia passo a passo para tocar violão de forma prática e divertida.",
         imagem: "/Frontend/img/cards/20.png",
-        lammecs: ["lancamentos", "cursos-curto-periodo"],
+        lammecs: ["Lancamentos", "Cursos curto periodo"],
         categoria: "Música",
         metadata: {
             anoLancamento: 2023,
@@ -201,7 +201,7 @@ const cursos = [
         subtitle: "Explore o futuro da tecnologia.",
         description: "Aprenda os conceitos básicos e avançados de IA, incluindo machine learning e redes neurais.",
         imagem: "/Frontend/img/cards/13.png",
-        lammecs: ["meus-cursos", "cursos-longo-periodo"],
+        lammecs: ["Meus cursos", "cursos longo periodo"],
         categoria: "Tecnologia da informação",
         metadata: {
             anoLancamento: 2024,
@@ -216,7 +216,7 @@ const cursos = [
         subtitle: "Multiplique seu patrimônio.",
         description: "Entenda como investir de forma consciente em ações, renda fixa e outros mercados financeiros.",
         imagem: "/Frontend/img/cards/11.png",
-        lammecs: ["em-alta", "cursos-curto-periodo"],
+        lammecs: ["Em alta", "cursos curto periodo"],
         categoria: "Negócios e finanças",
         metadata: {
             anoLancamento: 2024,
@@ -231,7 +231,7 @@ const cursos = [
         subtitle: "Gerencie informações como um especialista.",
         description: "Aprenda a criar, administrar e otimizar bancos de dados relacionais e não relacionais.",
         imagem: "/Frontend/img/cards/21.png",
-        lammecs: ["lancamento", "cursos-longo-periodo"],
+        lammecs: ["Lancamento", "cursos longo periodo"],
         categoria: "Ciência de dados",
         metadata: {
             anoLancamento: 2024,
@@ -246,7 +246,7 @@ const cursos = [
         subtitle: "Aprimore seu talento artístico.",
         description: "Explore técnicas avançadas para criar ilustrações impressionantes usando ferramentas digitais e tradicionais.",
         imagem: "/Frontend/img/cards/22.png",
-        lammecs: ["em-alta", "cursos-curto-periodo"],
+        lammecs: ["Em alta", "cursos curto periodo"],
         categoria: "Design",
         metadata: {
             anoLancamento: 2024,
@@ -261,7 +261,7 @@ const cursos = [
         subtitle: "Crie jogos que cativam e desafiam.",
         description: "Descubra como projetar e desenvolver jogos para diversas plataformas, utilizando engines populares como Unity e Unreal.",
         imagem: "/Frontend/img/cards/15.png",
-        lammecs: ["lancamento", "cursos-longo-periodo"],
+        lammecs: ["Lancamento", "cursos longo periodo"],
         categoria: "Programação",
         metadata: {
             anoLancamento: 2023,
