@@ -16,7 +16,7 @@ function verificarAutenticacao() {
 function verificarUsuarioLogado() {
     const activeUser = localStorage.getItem("activeUser");
     const topbarContainer = document.getElementById("topbar-container");
-
+    
     if (activeUser) {
         carregarTopbar("/Frontend/html/topbar.html", topbarContainer);
         atualizarUsername(activeUser);
@@ -47,5 +47,8 @@ function atualizarUsername(username) {
     }, 100);
 }
 
-// Executa a verificação ao carregar
-document.addEventListener("DOMContentLoaded", verificarUsuarioLogado());
+// Verificar autenticação ao carregar a página
+document.addEventListener("DOMContentLoaded", function() {
+    verificarUsuarioLogado(); // Atualiza o topo
+});
+
