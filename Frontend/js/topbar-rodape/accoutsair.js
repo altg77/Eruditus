@@ -7,14 +7,8 @@ function esconderLogoutModal() {
 }
 
 function processeLogout() {
-    const users = JSON.parse(localStorage.getItem("users")) || {};
-    const activeUser = localStorage.getItem("activeUser");
+    localStorage.removeItem("userData"); // Limpa o usuário ativo
 
-    if (activeUser) {
-        delete users[activeUser]; // Remove o token do usuário ativo
-        localStorage.setItem("users", JSON.stringify(users));
-    }
-    localStorage.removeItem("activeUser"); // Limpa o usuário ativo
     esconderLogoutModal();
     verificarUsuarioLogado(); 
 }

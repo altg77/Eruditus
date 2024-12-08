@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Frontend/css/profile/editarperfil.css">
+
+   <!-- Favicon e titulo -->
+   <link rel="shortcut icon" href="/Frontend/img/icons/FAVICON.png" type="image/x-icon">
+   <title>Eruditus | Editar perfil</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Editar perfil</h1>
+    <div class="profile-section">
+        <div class="profile-image">
+            <img id="profile-avatar" src="https://via.placeholder.com/100" alt="Ícone do perfil" />
+            <button class="edit-button" onclick="triggerFileInput()">✏️</button>
+            <input type="file" id="file-input" accept="image/*" style="display: none;" />
+          </div>
+      <div class="profile-info">
+        <label for="profile-name">Nome:</label>
+        <input type="text" id="profile-name" value="Techmundo" />
+        
+        <label for="profile-language">Idioma:</label>
+        <select id="profile-language">
+          <option value="pt-br" selected>Português</option>
+          <option value="en">Inglês</option>
+          <option value="es">Espanhol</option>
+        </select>
+
+        <label for="profile-restrictions">Séries e filmes permitidos:</label>
+        <select id="profile-restrictions">
+          <option value="all" selected>Todos os níveis de maturidade</option>
+          <option value="kids">Somente infantil</option>
+        </select>
+
+        <div class="checkbox-section">
+          <input type="checkbox" id="is-child" />
+          <label for="is-child">Criança?</label>
+        </div>
+      </div>
+    </div>
+    <div class="buttons">
+      <button id="save-button">Salvar</button>
+      <button id="cancel-button">Cancelar</button>
+      <button id="delete-button" class="delete">Excluir Perfil</button>
+    </div>
+  </div>
+  
+
+<script src="/Frontend/js/profile/edit.js"></script>
+
+</body>
+</html>

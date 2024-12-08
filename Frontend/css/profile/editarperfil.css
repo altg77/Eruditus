@@ -1,0 +1,102 @@
+body {
+    background: radial-gradient(#252525, #161824);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 45px;
+  }
+  
+  .profile-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-image {
+    position: relative;
+  }
+  
+  .profile-image img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 70%;
+  }
+  
+  .edit-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    margin-bottom: 70%;
+    background-color: #ff9900;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .profile-info {
+    margin-left: 20px;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"], select {
+    width: 150%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+  }
+  
+  .checkbox-section {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  button {
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #save-button {
+    background-color: #00ff40;
+    color: black;
+  }
+  
+  #cancel-button {
+    background-color: #6c757d3a;
+    color: #fff;
+  }
+  
+  #delete-button {
+    background-color: #ffffff63;
+    color: #fff;
+  }
+  
+ 
+  

@@ -77,4 +77,13 @@
 });
 </script>
 
+<script>
+  window.onload = function () {
+    const savedAvatar = localStorage.getItem("profileAvatar");
+    if (savedAvatar) {
+      document.getElementById("topbar-avatar").src = savedAvatar;
+    }
+  };
+ </script>
+
 </html>

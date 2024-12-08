@@ -1,54 +1,40 @@
-function verificarAutenticacao() {
-    const activeUser = localStorage.getItem("activeUser"); // Usuário ativo
-    const users = JSON.parse(localStorage.getItem("users")) || {}; // Todos os usuários
-    const token = users[activeUser]; // Token do usuário ativo
-
-    // Simula a validação do token
-    if (!token || generateToken(activeUser, null) !== token) {
-        console.warn("Autenticação inválida. Redirecionando para a página de login.");
-        window.location.href = "/Frontend/login.html"; // Redireciona se inválido
-    } else {
-        console.log(`Usuário autenticado: ${activeUser}`);
-        verificarUsuarioLogado(); // Atualiza a interface
-    }
-}
-
 function verificarUsuarioLogado() {
-    const activeUser = localStorage.getItem("activeUser");
+    const activeUser = JSON.parse(localStorage.getItem("userData")); // Buscar os dados do usuário com token
     const topbarContainer = document.getElementById("topbar-container");
     
-    if (activeUser) {
-        carregarTopbar("/Frontend/html/topbar.html", topbarContainer);
-        atualizarUsername(activeUser);
+    if (activeUser && activeUser.token) {
+      carregarTopbar("/Frontend/html/topbar.html", topbarContainer);
+      atualizarUsername(activeUser.username); // Passar o nome de usuário para a função
     } else {
-        carregarTopbar("/Frontend/html/topbarAuth.html", topbarContainer);
+      carregarTopbar("/Frontend/html/topbarAuth.html", topbarContainer);
     }
-}
-
-function carregarTopbar(arquivo, container) {
+  }
+  
+  function carregarTopbar(arquivo, container) {
     fetch(arquivo)
-        .then((response) => {
-            if (!response.ok) throw new Error("Erro ao carregar o arquivo: " + response.statusText);
-            return response.text();
-        })
-        .then((html) => {
-            container.innerHTML = html;
-        })
-        .catch((error) => console.error("Erro:", error));
-}
-
-function atualizarUsername(username) {
+      .then((response) => {
+        if (!response.ok) throw new Error("Erro ao carregar o arquivo: " + response.statusText);
+        return response.text();
+      })
+      .then((html) => {
+        container.innerHTML = html;
+      })
+      .catch((error) => console.error("Erro:", error));
+  }
+  
+  function atualizarUsername(username) {
     const interval = setInterval(() => {
-        const usernameElement = document.getElementById("user-name");
-        if (usernameElement) {
-            clearInterval(interval);
-            usernameElement.textContent = username || "Visitante";
-        }
+      const usernameElement = document.getElementById("user-name");
+  
+      if (usernameElement) {
+        clearInterval(interval);
+        usernameElement.textContent = username || "Visitante"; // Se não houver nome, coloca "Visitante"
+      }
     }, 100);
-}
-
-// Verificar autenticação ao carregar a página
-document.addEventListener("DOMContentLoaded", function() {
+  }
+  
+  // Verificar autenticação ao carregar a página
+  document.addEventListener("DOMContentLoaded", function() {
     verificarUsuarioLogado(); // Atualiza o topo
-});
-
+  });
+  
