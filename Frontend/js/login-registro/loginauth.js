@@ -11,9 +11,11 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
   if (storedUser && storedUser.password === password) {
     // Gerar um token de sessão (aqui estamos usando uma string aleatória para simplicidade)
     const token = generateToken();
+    const role = storedUser.role;  // Certificando-se de pegar o 'role' ou atribuir "user" se não existir
 
     // Salvar o token e o username no localStorage
-    localStorage.setItem("userData", JSON.stringify({ username, token }));
+    localStorage.setItem("userData", JSON.stringify({ username, token, role // Pega o role do usuário armazenado
+  }));
 
     // Login bem-sucedido, redireciona para a página principal
     window.location.href = "/Frontend/index.html"; // Alterar para o caminho da página principal

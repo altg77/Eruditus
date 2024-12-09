@@ -24,7 +24,7 @@ const cursos = [
         categoria: "Negócios e Finanças",
         metadata: {
             anoLancamento: 2023,
-            temporadas: 1,
+            temporadas: 4,
             episodios: 8
         },
         tags: ["8 Atividades", "20 Horas de vídeo", "12 recursos", "Certificado"],
@@ -39,7 +39,7 @@ const cursos = [
         categoria: "Negócios e Finanças",
         metadata: {
             anoLancamento: 2024,
-            temporadas: 1,
+            temporadas: 2,
             episodios: 10
         },
         tags: ["5 Atividades", "15 Horas de vídeo", "8 recursos", "Certificado"],
@@ -84,7 +84,7 @@ const cursos = [
         categoria: "Fotografia e vídeo",
         metadata: {
             anoLancamento: 2024,
-            temporadas: 1,
+            temporadas: 6,
             episodios: 15
         },
         tags: ["10 Atividades", "30 Horas de vídeo", "12 recursos", "Certificado"],
@@ -99,7 +99,7 @@ const cursos = [
         categoria: "Programação",
         metadata: {
             anoLancamento: 2022,
-            temporadas: 3,
+            temporadas: 5,
             episodios: 30
         },
         tags: ["12 Atividades", "40 Horas de vídeo", "15 recursos", "Certificado"],
@@ -114,7 +114,7 @@ const cursos = [
         categoria: "Fotografia e Vídeo",
         metadata: {
             anoLancamento: 2023,
-            temporadas: 2,
+            temporadas: 3,
             episodios: 25
         },
         tags: ["8 Atividades", "20 Horas de vídeo", "10 recursos", "Certificado"],
@@ -129,7 +129,7 @@ const cursos = [
         categoria: "Design",
         metadata: {
             anoLancamento: 2023,
-            temporadas: 1,
+            temporadas: 2,
             episodios: 12
         },
         tags: ["10 Atividades", "25 Horas de vídeo", "12 recursos", "Certificado"],
@@ -160,7 +160,7 @@ const cursos = [
         categoria: "Ensino e estudo acadêmico",
         metadata: {
             anoLancamento: 2023,
-            temporadas: 1,
+            temporadas: 8,
             episodios: 10
         },
         tags: ["12 Atividades", "30 Horas de vídeo", "10 recursos", "Certificado"],
@@ -175,7 +175,7 @@ const cursos = [
         categoria: "Projetos",
         metadata: {
             anoLancamento: 2024,
-            temporadas: 1,
+            temporadas: 2,
             episodios: 15
         },
         tags: ["8 Atividades", "25 Horas de vídeo", "12 recursos", "Certificado"],
@@ -190,7 +190,7 @@ const cursos = [
         categoria: "Música",
         metadata: {
             anoLancamento: 2023,
-            temporadas: 1,
+            temporadas: 3,
             episodios: 8
         },
         tags: ["10 Atividades", "20 Horas de vídeo", "8 recursos", "Certificado"],
@@ -220,7 +220,7 @@ const cursos = [
         categoria: "Negócios e finanças",
         metadata: {
             anoLancamento: 2024,
-            temporadas: 2,
+            temporadas: 3,
             episodios: 25
         },
         tags: ["8 Atividades", "30 Horas de vídeo", "10 recursos", "Certificado"],
@@ -235,7 +235,7 @@ const cursos = [
         categoria: "Ciência de dados",
         metadata: {
             anoLancamento: 2024,
-            temporadas: 1,
+            temporadas: 8,
             episodios: 20
         },
         tags: ["10 Atividades", "35 Horas de vídeo", "12 recursos", "Certificado"],
@@ -250,7 +250,7 @@ const cursos = [
         categoria: "Design",
         metadata: {
             anoLancamento: 2024,
-            temporadas: 1,
+            temporadas: 4,
             episodios: 12
         },
         tags: ["12 Atividades", "25 Horas de vídeo", "15 recursos", "Certificado"],
@@ -265,12 +265,147 @@ const cursos = [
         categoria: "Programação",
         metadata: {
             anoLancamento: 2023,
-            temporadas: 1,
+            temporadas: 12,
             episodios: 15
         },
         tags: ["15 Atividades", "50 Horas de vídeo", "18 recursos", "Certificado"],
 
     },
+        {
+          id: 19,
+          title: "Matemática Básica",
+          subtitle: "Fundamentos para quem quer entender a matemática.",
+          description: "Este curso aborda os conceitos essenciais da matemática, como operações básicas, frações, porcentagens e geometria. Ideal para iniciantes ou quem precisa de uma base sólida para cursos mais avançados.",
+          imagem: "/Frontend/img/cards/23.png",
+          lammecs: ["Lancamentos", "Cursos longo período", "Em Alta"],
+          categoria: "Matemática",
+          metadata: {
+            anoLancamento: 2015,
+            temporadas: 2,
+            episodios: 10
+          },
+          tags: ["7 Atividades", "8 Horas de vídeo", "6 recursos", "Certificado"]
+        },
+        {
+          id: 20,
+          title: "Física Quntica",
+          subtitle: "Explore os fundamentos da física.",
+          description: "Aprenda os conceitos de física Quântica. Este curso é uma introdução aos principais conceitos e teorias que governam o mundo físico ao nosso redor.",
+          imagem: "/Frontend/img/cards/24.png",
+          lammecs: ["Lancamentos", "Cursos longo período"],
+          categoria: "Física",
+          metadata: {
+            anoLancamento: 2016,
+            temporadas: 2,
+            episodios: 12
+          },
+          tags: ["8 Atividades", "10 Horas de vídeo", "7 recursos", "Certificado"]
+        },
+        {
+          id: 21,
+          title: "Algoritmos e Estruturas de Dados",
+          subtitle: "Conceitos fundamentais para programadores.",
+          description: "Este curso ensina os principais algoritmos e estruturas de dados usados na programação, como listas, pilhas, filas, árvores e grafos. Perfeito para quem quer aprofundar seus conhecimentos de programação.",
+          imagem: "/Frontend/img/cards/25.png",
+          lammecs: ["Lançamentos", "Cursos longo período", "Meus cursos"],
+          categoria: "Programação",
+          metadata: {
+            anoLancamento: 2020,
+            temporadas: 3,
+            episodios: 20
+          },
+          tags: ["10 Atividades", "15 Horas de vídeo", "9 recursos", "Certificado"]
+        },
+        {
+          id: 22,
+          title: "Introdução à Ciência de Dados",
+          subtitle: "Comece sua jornada no mundo dos dados.",
+          description: "Este curso abrange os fundamentos de Ciência de Dados, incluindo a coleta, limpeza e análise de dados. Aprenda a usar ferramentas como Python, pandas e matplotlib para análise de dados.",
+          imagem: "/Frontend/img/cards/26.png",
+          lammecs: ["Lancamentos", "Cursos longo período"],
+          categoria: "Ciência de Dados",
+          metadata: {
+            anoLancamento: 2021,
+            temporadas: 2,
+            episodios: 15
+          },
+          tags: ["9 Atividades", "12 Horas de vídeo", "8 recursos", "Certificado"]
+        },
+        {
+          id: 23,
+          title: "Design Gráfico: Criando Identidades Visuais",
+          subtitle: "Desenvolva suas habilidades em design visual.",
+          description: "Aprenda a criar identidades visuais completas, incluindo logotipos, paletas de cores e tipografia, utilizando ferramentas como Illustrator e Photoshop.",
+          imagem: "/Frontend/img/cards/27.png",
+          lammecs: ["Lançamentos", "Cursos curto período", "Meus cursos", "Em Alta"],
+          categoria: "Design",
+          metadata: {
+            anoLancamento: 2022,
+            temporadas: 3,
+            episodios: 18
+          },
+          tags: ["7 Atividades", "10 Horas de vídeo", "6 recursos", "Certificado"]
+        },
+        {
+          id: 24,
+          title: "Fotografia Digital: Técnicas Avançadas",
+          subtitle: "Domine as técnicas de fotografia digital.",
+          description: "Este curso avançado em fotografia digital abrange técnicas como fotografia de longa exposição, controle de luz e composição avançada. Ideal para quem já tem experiência e quer aprimorar suas habilidades.",
+          imagem: "/Frontend/img/cards/28.png",
+          lammecs: ["Cursos curto período"],
+          categoria: "Fotografia e Vídeo",
+          metadata: {
+            anoLancamento: 2023,
+            temporadas: 2,
+            episodios: 12
+          },
+          tags: ["8 Atividades", "14 Horas de vídeo", "9 recursos", "Certificado"]
+        },
+        {
+          id: 25,
+          title: "Videomaker: Produção e Edição de Vídeo",
+          subtitle: "Aprenda a criar vídeos de alta qualidade.",
+          description: "Neste curso, você aprenderá a produzir e editar vídeos profissionais usando ferramentas como Adobe Premiere e Final Cut. Desde o planejamento até a finalização do vídeo.",
+          imagem: "/Frontend/img/cards/29.png",
+          lammecs: ["Lancamentos", "Cursos longo período", "Meus cursos"],
+          categoria: "Fotografia e Vídeo",
+          metadata: {
+            anoLancamento: 2023,
+            temporadas: 3,
+            episodios: 15
+          },
+          tags: ["9 Atividades", "16 Horas de vídeo", "10 recursos", "Certificado"]
+        },
+        {
+          id: 26,
+          title: "Estatísticas e Análise de Dados",
+          subtitle: "Torne-se um especialista em análise de dados.",
+          description: "Este curso de estatísticas aborda análise de dados utilizando métodos estatísticos. Aprenda a calcular médias, desvios padrões e realizar testes estatísticos para interpretar grandes volumes de dados.",
+          imagem: "/Frontend/img/cards/30.png",
+          lammecs: ["Cursos longo período"],
+          categoria: "Ciência de Dados",
+          metadata: {
+            anoLancamento: 2021,
+            temporadas: 1,
+            episodios: 10
+          },
+          tags: ["6 Atividades", "9 Horas de vídeo", "7 recursos", "Certificado"]
+        },
+        {
+          id: 27,
+          title: "Photoshop para Design Digital",
+          subtitle: "Aperfeiçoe suas habilidades em edição digital.",
+          description: "Este curso ensina o uso avançado do Photoshop para designers gráficos. Explore técnicas de manipulação de imagem, montagem e retoques digitais.",
+          imagem: "/Frontend/img/cards/31.png",
+          lammecs: ["Cursos curto período"],
+          categoria: "Design",
+          metadata: {
+            anoLancamento: 2021,
+            temporadas: 2,
+            episodios: 14
+          },
+          tags: ["10 Atividades", "12 Horas de vídeo", "8 recursos", "Certificado"]
+        }
 ];
 
 // Função para gerar os cards e redirecionar para detalhes.html
@@ -504,44 +639,111 @@ document.getElementById('pesquisa-input').addEventListener('input', function () 
     }
 });
 
-function gerarCardsInscritos() {
-    const user = JSON.parse(localStorage.getItem("user"));
-
-    // Verifica se há um usuário no localStorage e se ele tem cursos inscritos
-    if (!user || user.cursosInscritos.length === 0) {
-        alert("Você ainda não se inscreveu em nenhum curso.");
-        return;
+function inscreverUsuarioNoCurso(cursoId) {
+    if (!cursoId) {
+      alert("Erro: ID do curso não encontrado.");
+      return;
     }
-
-    const container = document.getElementById("content-container"); // Certifique-se de que o contêiner existe
-    container.innerHTML = ""; // Limpa os cards existentes
-
-    // Filtra os cursos com base nos IDs dos cursos inscritos do usuário
-    const cursosInscritos = cursos.filter(curso => user.cursosInscritos.includes(curso.id));
-
-    // Verifica se o array de cursosInscritos está vazio, caso contrário, gera os cards
-    if (cursosInscritos.length === 0) {
-        alert("Nenhum curso encontrado para o usuário.");
-        return;
+  
+    // Obter dados do usuário logado
+    const userData = JSON.parse(localStorage.getItem("userData"));
+    if (userData) {
+      const currentUser = JSON.parse(localStorage.getItem(userData.username)) || {};
+      currentUser.cursosInscritos = currentUser.cursosInscritos || [];
+  
+      // Adicionar curso à lista de cursos inscritos
+      if (!currentUser.cursosInscritos.includes(cursoId)) {
+        currentUser.cursosInscritos.push(cursoId);
+        localStorage.setItem(userData.username, JSON.stringify(currentUser));
+        alert(`Você se inscreveu com sucesso no curso de ID: ${cursoId}`);
+      } else {
+        alert("Você já está inscrito neste curso.");
+      }
+    } else {
+      alert("Erro: Usuário não encontrado.");
     }
+  }
+  
 
-    cursosInscritos.forEach(curso => {
-        const card = document.createElement("div");
-        card.className = "card";
-
-        // Criação do card para cada curso
-        card.innerHTML = `
-            <img src="${curso.imagem}" alt="${curso.categoria}">
-            <h3>${curso.title}</h3>
-            <p>${curso.description}</p>
+  
+function mostrarCursosDoUsuario() {
+    const userData = JSON.parse(localStorage.getItem("userData"));
+    if (!userData || !userData.username) {
+      alert("Nenhum usuário logado.");
+      return;
+    }
+  
+    const storedUser = JSON.parse(localStorage.getItem(userData.username));
+    if (!storedUser || !storedUser.cursosInscritos || storedUser.cursosInscritos.length === 0) {
+      alert("Nenhum curso inscrito encontrado para este usuário.");
+      return;
+    }
+  
+    // Buscar cursos inscritos no array global 'cursos'
+    const cursosInscritos = storedUser.cursosInscritos.map((id) => 
+      cursos.find((curso) => curso.id === id)
+    ).filter(curso => curso); // Filtra possíveis valores null ou undefined
+  
+    // Renderizar na interface
+    const cursosContainer = document.getElementById("cursosContainer");
+    cursosContainer.innerHTML = ""; // Limpar o container antes de adicionar novos cursos
+  
+    cursosInscritos.forEach((curso) => {
+      if (curso) {
+        const cursoHTML = `
+          <div class="curso-card">
+            <img src="${curso.imagem}" alt="${curso.title}" class="curso-imagem"/>
         `;
-
-        // Adiciona o card ao contêiner
-        container.appendChild(card);
+        cursosContainer.innerHTML += cursoHTML;
+      }
     });
-}
+  }
+  
+  function redirecionarParaCurso(cursoId) {
+    // Redireciona para a página de detalhes do curso
+    window.location.href = `/detalhes.html?id=${cursoId}`;
+  }
+  
+  
 
+  // Função para abrir o modal
+function abrirModal() {
+    const modal = document.getElementById("novo-curso-container");
+    modal.style.display = "flex";
+  }
+  
+  // Função para fechar o modal
+  function fecharModal() {
+    const modal = document.getElementById("novo-curso-container");
+    modal.style.display = "none";
+  }
+  
+  // Função para adicionar um curso
+  function adicionarCurso() {
+    const title = document.getElementById("curso-title").value;
+    const subtitle = document.getElementById("curso-subtitle").value;
+    const description = document.getElementById("curso-description").value;
+    const imagem = document.getElementById("curso-imagem").value || "/Frontend/img/default.png";
+    const categoria = document.getElementById("curso-categoria").value;
+    const anoLancamento = document.getElementById("curso-ano").value;
+    const tags = document.getElementById("curso-tags").value.split(",").map(tag => tag.trim());
+  
+    const novoCurso = {
+      id: cursos.length + 1, // ID automático
+      title,
+      subtitle,
+      description,
+      imagem,
+      categoria,
+      metadata: { anoLancamento: Number(anoLancamento) },
+      tags
+    };
+  
+    cursos.push(novoCurso); // Adiciona ao array de cursos
+    carregarCursos(); // Atualiza a lista de cursos
+    fecharModal(); // Fecha o modal
+  }
+  
+  
 
-
-
-
+  

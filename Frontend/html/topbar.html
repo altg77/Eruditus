@@ -47,14 +47,14 @@
                 </li>
                 
                 <li><a href="#">
-                  <a href="/Frontend/meuscursos.html" class="icons"><img src="/Frontend/img/icons/Topbar/video.png"  style="height: 16px; min-width: 16px; width: 16px; z-index: auto" alt="meuscursos"/>
-                    <p class="name-tag">Meus cursos</p>
+                  <a href="#" class="icons"><img src="/Frontend/img/icons/Topbar/video.png"  style="height: 16px; min-width: 16px; width: 16px; z-index: auto" alt="meuscursos"/>
+                    <p class="name-tag" onclick="redirecionarParaLammec('Meus Cursos')">Meus cursos</p>
                     </a>
                   </li>
 
                   <li><a href="#">
                     <a href="#" class="icons"><img src="/Frontend/img/icons/Topbar/em.png"  style="height: 16px; min-width: 16px; width: 16px; z-index: auto" alt="em"/>
-                      <p class="name-tag">Ensine na plataforma</p>
+                      <p class="name-tag" onclick="verificarRole()">Ensine na plataforma</p>
                       </a>
                     </li>
 
@@ -75,8 +75,8 @@
             <ul class="profile-nav-options">
                 <li><a href="/Frontend/html/profile/editarperfil.html"><p>Editar perfil</p></a></li>
                 <li><a href="#"><p>Assinaturas</p></a></li>
-                <li><a href="/Frontend/meuscursos.html"><p>Meus cursos</p></a></li>
-                <li><a href="#"><p>Ensine na plataforma</p></a></li>
+                <li><a href="#" onclick="redirecionarParaLammec('Meus Cursos')"><p>Meus cursos</p></a></li>
+                <li><a href="#" onclick="verificarRole()"><p>Ensine na plataforma</p></a></li>
                 <li><a href="#"><p>Ajuda</p></a></li>
                 <li><a href="#" onclick="mostrarLogoutModal()"><p>Sair</p></a></li>
             </ul>

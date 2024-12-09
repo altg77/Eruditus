@@ -32,8 +32,8 @@ document.getElementById("signupForm").addEventListener("submit", function (event
     password: newPassword,
     avatar: "", // A imagem de avatar será armazenada posteriormente
     token: token,
-    role: "user", // Adiciona o role "user" para o novo usuário
-    cursosInscritos: [] // Lista para armazenar os IDs dos cursos inscritos
+    role: "normal", // Adiciona o role "user" para o novo usuário
+    cursosInscritos: [] // Lista para armazenar os IDs dos cursos ianscritos
   };
 
   // Salva o novo usuário no localStorage

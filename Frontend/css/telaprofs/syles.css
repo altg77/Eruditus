@@ -1,0 +1,64 @@
+/* Estilo para o corpo da página */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  /* Estilo para o contêiner principal */
+  .container {
+    margin-left: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    flex: 1; /* Garante que a área de conteúdo ocupe o restante da tela */
+    margin-top: 50px;
+  }
+  
+  /* Estilo do título */
+  .container h1 {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo da descrição */
+  .container p {
+    font-size: 1.2em;
+    color: #555555;
+    margin-bottom: 40px;
+  }
+  
+  /* Estilo do botão */
+  .container button {
+    background-color: #1d3557;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Efeito de hover no botão */
+  .container button:hover {
+    background-color: #457b9d;
+  }
+  
+  /* Estilo do rodapé e topbar */
+  #topbar-container, #rodape-container {
+    width: 100%;
+    background-color: #1d3557; /* Pode ser alterado conforme o design do topbar/rodape */
+    height: 50px; /* Tamanho fixo, ajuste conforme necessário */
+  }
+  
+  

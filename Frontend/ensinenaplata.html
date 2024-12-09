@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Frontend/css/telaprofs/ensinena.css">
+  <link rel="stylesheet" href="/Frontend/css/index/reset.css">
+
+
+   <!-- Favicon e titulo -->
+   <link rel="shortcut icon" href="/Frontend/img/icons/FAVICON.png" type="image/x-icon">
+   <title>Erudiuts | venha dar aulas conosco</title>
+</head>
+<body>
+    <div id="topbar-container"></div> <!-- Aqui será carregado o topbar -->
+
+  <!-- Aplicando a classe page-container para afetar apenas esta parte -->
+  <div class="page-container">
+    <div class="text-content">
+      <h1>Venha dar aulas conosco</h1>
+      <p>Torne-se instrutor e comece a mudar vidas — incluindo a sua</p>
+      <button id="startButton">Começar agora</button>
+    </div>
+    <div class="image-content">
+      <img src="/Frontend/img/professor.png" alt="Instrutor" />
+    </div>
+  </div>
+
+  <div id="rodape-container"></div> <!-- Aqui será carregado o rodape -->
+
+
+  <script>
+    window.onload = function () {
+     // Obter os dados do usuário logado
+     const userData = JSON.parse(localStorage.getItem("userData"));
+     if (userData && userData.username) {
+       const currentUser = JSON.parse(localStorage.getItem(userData.username));
+       
+       // Se o avatar estiver salvo, exibe-o na topbar
+       if (currentUser && currentUser.avatar) {
+         document.getElementById("topbar-avatar").src = currentUser.avatar;
+       }
+     }
+   };
+</script>
+<!-- Scripts de authenticação, topbar e rodape -->
+<script src="/Frontend/js/topbar-rodape/rodape.js"></script>
+<script src="/Frontend/js/login-registro/autenticado.js"></script>
+<script src="/Frontend/js/topbar-rodape/accoutsair.js"></script>
+
+
+<script src="/Frontend/js/Card/redirecionador.js"></script>
+  <script src="/Frontend/js/professor/redire.js"></script>
+</body>
+</html>

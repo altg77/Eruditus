@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Frontend/css/telaprofs/syles.css">
+  <link rel="stylesheet" href="/Frontend/css/index/reset.css">
+
+  <!-- Favicon e título -->
+  <link rel="shortcut icon" href="/Frontend/img/icons/FAVICON.png" type="image/x-icon">
+  <title>Erudiuts | Venha dar aulas conosco</title>
+</head>
+<body>
+  <div id="topbar-container"></div> <!-- Aqui será carregado o topbar -->
+
+  <div class="container">
+    <h1>Bem-vindo!</h1>
+    <p>Clique no botão abaixo para criar seu curso:</p>
+    <button onclick="abrirModal()">Criar Curso</button>
+    
+    <!-- Seção para listar cursos criados -->
+    <div id="courses-container">
+      <h2>Cursos Criados</h2>
+      <ul id="courses-list">
+        <!-- Os cursos criados serão listados aqui dinamicamente -->
+      </ul>
+    </div>
+
+    <!-- Formulário como modal -->
+<div id="novo-curso-container" class="modal-container" style="display: none;">
+    <div class="modal-content">
+      <h2>Adicionar Novo Curso</h2>
+      <form id="curso-form">
+        <label for="curso-title">Título:</label>
+        <input type="text" id="curso-title" required>
+  
+        <label for="curso-subtitle">Subtítulo:</label>
+        <input type="text" id="curso-subtitle" required>
+  
+        <label for="curso-description">Descrição:</label>
+        <textarea id="curso-description" rows="4" required></textarea>
+  
+        <label for="curso-imagem">Imagem (URL):</label>
+        <input type="text" id="curso-imagem">
+  
+        <label for="curso-categoria">Categoria:</label>
+        <input type="text" id="curso-categoria" required>
+  
+        <label for="curso-ano">Ano de Lançamento:</label>
+        <input type="number" id="curso-ano" required>
+  
+        <label for="curso-tags">Tags (separadas por vírgula):</label>
+        <input type="text" id="curso-tags">
+  
+        <button type="button" onclick="adicionarCurso()">Adicionar Curso</button>
+        <button type="button" onclick="fecharModal()">Cancelar</button>
+      </form>
+    </div>
+  </div>
+  
+  </div>
+
+  <div id="rodape-container"></div> <!-- Aqui será carregado o rodapé -->
+
+  <script>
+    window.onload = function () {
+     // Obter os dados do usuário logado
+     const userData = JSON.parse(localStorage.getItem("userData"));
+     if (userData && userData.username) {
+       const currentUser = JSON.parse(localStorage.getItem(userData.username));
+       
+       // Se o avatar estiver salvo, exibe-o na topbar
+       if (currentUser && currentUser.avatar) {
+         document.getElementById("topbar-avatar").src = currentUser.avatar;
+       }
+     }
+   };
+</script>
+
+  <!-- Scripts de autenticação, topbar e rodape -->
+  <script src="/Frontend/js/topbar-rodape/rodape.js"></script>
+  <script src="/Frontend/js/login-registro/autenticado.js"></script>
+  <script src="/Frontend/js/topbar-rodape/accoutsair.js"></script>
+  <script src="/Frontend/js/Card/gerarcards.js"></script>
+
+
+  <script src="/Frontend/js/Card/redirecionador.js"></script>
+  <script src="/Frontend/js/professor/redire.js"></script>
+</body>
+</html>

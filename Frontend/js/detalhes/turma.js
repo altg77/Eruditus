@@ -10,7 +10,7 @@ function showStudents() {
     // Exibe o nome do professor acima da lista de alunos
     const professorElement = document.createElement("div");
     professorElement.classList.add("professor");
-    professorElement.textContent = `Professor(a): ${professor}`;
+   
     contentList.appendChild(professorElement);
 
     // Exibe a lista de alunos

@@ -1,6 +1,7 @@
 // Captura os parâmetros da URL
 const urlParams = new URLSearchParams(window.location.search);
 
+const cursoId = urlParams.get('id'); // Captura o ID do curso
 const cursoTitle = urlParams.get('title');
 const imageUrl = urlParams.get('imagem'); 
 const cursoDescription = urlParams.get('description');

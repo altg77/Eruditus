@@ -1,0 +1,87 @@
+/* Contêiner Principal */
+.cursos-container {
+    display: flex;
+    flex-wrap: wrap; /* Permitir quebra de linha */
+    justify-content: flex-start; /* Alinhar os cards à esquerda */
+    gap: 20px; /* Espaçamento entre os cards */
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px; /* Bordas arredondadas */
+  }
+  
+  /* Estilo para Cada Card */
+  .curso-card {
+    flex: 1 1 calc(25% - 20px); /* 4 cards por linha, ajustável */
+    max-width: calc(25% - 20px); /* Mesma largura máxima */
+    min-width: 200px; /* Tamanho mínimo para evitar cards muito pequenos */
+    border-radius: 10px; /* Bordas arredondadas */
+    overflow: hidden; /* Garantir que os elementos respeitem os limites do card */
+    display: flex;
+    flex-direction: column; /* Elementos organizados verticalmente */
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  /* Hover para os Cards */
+  .curso-card:hover {
+    transform: translateY(-5px); /* Elevação sutil */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+  }
+  
+  /* Imagens dos Cursos */
+  .curso-card img {
+    width: 100%; /* Imagem ocupa toda a largura do card */
+    height: 150px; /* Altura fixa */
+    object-fit: cover; /* Manter proporção da imagem */
+    border-bottom: 2px solid #ddd; /* Separação entre imagem e descrição */
+  }
+  
+  /* Títulos dos Cursos */
+  .curso-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333; /* Texto escuro */
+  }
+  
+  /* Descrição do Curso */
+  .curso-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 5px 10px;
+    line-height: 1.4;
+  }
+  
+  /* Botão de Ação no Card */
+  .curso-card button {
+    background-color: #007bff; /* Azul para ação */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .curso-card button:hover {
+    background-color: #0056b3; /* Azul mais escuro no hover */
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .curso-card {
+      flex: 1 1 calc(50% - 20px); /* 2 cards por linha em telas menores */
+      max-width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .curso-card {
+      flex: 1 1 calc(100% - 20px); /* 1 card por linha em telas muito pequenas */
+      max-width: calc(100% - 20px);
+    }
+  }
+  

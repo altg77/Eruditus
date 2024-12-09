@@ -1,17 +1,12 @@
 const activities = [
-    "Atividade 1: Introdução às vendas",
-    "Atividade 2: Técnicas de negociação",
-    "Atividade 3: Como superar objeções",
-    "Atividade 4: Relacionamento com clientes",
-    "Atividade 5: Estratégias de fidelização",
-    "Atividade 6: Prática de vendas ao vivo"
+    "Atividade 1",
+    "Atividade 2",
+    "Atividade 3",
 ];
 
 const evaluations = [
-    "Avaliação 1: Desempenho em vendas",
-    "Avaliação 2: Capacidade de negociação",
-    "Avaliação 3: Feedback de clientes",
-    "Avaliação 4: Análise de metas"
+    "Avaliação 1: Teorica",
+    "Avaliação 2: Pratica",
 ];
 
 function showActivities() {

@@ -11,7 +11,7 @@
     
     <!-- Favicon e titulo -->
     <link rel="shortcut icon" href="/Frontend/img/icons/FAVICON.png" type="image/x-icon">
-    <title>Poder da Venda | Eruditus</title>
+    <title>Eruditus</title>
 </head>
 
 <body>
@@ -100,6 +100,11 @@
 <script src="/Frontend/js/Card/carregardetalhes.js"></script>
 <script src="/Frontend/js/detalhes/inscri.js"></script>
 
+<script src="/Frontend/js/Card/gerarcards.js"></script>
+<script src="/Frontend/js/professor/verificarrole.js"></script>
+
+
+
 
 <script>
     window.onload = function () {
@@ -117,7 +122,14 @@
    };
 </script>
 
+<script>// Inicializar os cards
+  document.getElementById("inscrever-bnt").addEventListener("click", function () {
+    inscreverUsuarioNoCurso(cursoId);
+    });
+ </script>
+
    
 <script>toggleOculta();</script>
 
 </html>
+

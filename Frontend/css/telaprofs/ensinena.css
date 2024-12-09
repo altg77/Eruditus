@@ -1,0 +1,77 @@
+
+
+/* Classe para isolar o estilo */
+.page-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    height: 100vh;
+  }
+  
+  /* Estilos do conteúdo de texto */
+  .page-container .text-content {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .page-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .page-container p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #7e7d7d;
+  }
+  
+  /* Estilo para o botão */
+  .page-container button {
+    background-color: #1eff00;
+    color: rgb(0, 0, 0);
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .page-container button:hover {
+    background-color: #10813b;
+  }
+  
+  /* Estilo para a imagem */
+.page-container .image-content {
+    flex: 1;
+    max-width: 100%; /* Ajuste para ocupar a largura máxima possível */
+    text-align: center;
+  }
+  
+  
+.page-container img {
+    width: 80%; /* Faz a imagem ocupar 100% da largura do seu container */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px;
+  }
+  
+  /* Responsividade */
+  @media screen and (max-width: 768px) {
+    .page-container {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .page-container .text-content {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .page-container .image-content {
+      text-align: center;
+    }
+  }
+  
