@@ -6,16 +6,16 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
   const errorMessage = document.getElementById("errorMessage");
 
   // Verifica se o usuário está registrado no localStorage
-  const storedPassword = localStorage.getItem(username);
+  const storedUser = JSON.parse(localStorage.getItem(username));
 
-  if (storedPassword && storedPassword === password) {
+  if (storedUser && storedUser.password === password) {
     // Gerar um token de sessão (aqui estamos usando uma string aleatória para simplicidade)
     const token = generateToken();
-    
+
     // Salvar o token e o username no localStorage
     localStorage.setItem("userData", JSON.stringify({ username, token }));
 
-    // Login bem-sucedido
+    // Login bem-sucedido, redireciona para a página principal
     window.location.href = "/Frontend/index.html"; // Alterar para o caminho da página principal
   } else {
     // Exibe mensagem de erro

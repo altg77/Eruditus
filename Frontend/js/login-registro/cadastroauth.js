@@ -22,11 +22,28 @@ document.getElementById("signupForm").addEventListener("submit", function (event
   if (localStorage.getItem(newUsername)) {
     errorMessage.textContent = "Usuário já cadastrado! Escolha outro nome.";
     return;
-  }
+  }     
+
+  // Gerar token para o novo usuário
+  const token = generateToken();
+
+  const user = {
+    username: newUsername, // Armazena o nome de usuário
+    password: newPassword,
+    avatar: "", // A imagem de avatar será armazenada posteriormente
+    token: token,
+    role: "user", // Adiciona o role "user" para o novo usuário
+    cursosInscritos: [] // Lista para armazenar os IDs dos cursos inscritos
+  };
 
   // Salva o novo usuário no localStorage
-  localStorage.setItem(newUsername, newPassword);
+  localStorage.setItem(newUsername, JSON.stringify(user));
 
   // Exibe uma mensagem de sucesso e redireciona para o login
   window.location.href = "/Frontend/login.html"; // Altere o caminho se necessário
 });
+
+// Função para gerar um token único (pode ser mais complexo em um sistema real)
+function generateToken() {
+  return Math.random().toString(36).substr(2); // Gera um token simples
+}

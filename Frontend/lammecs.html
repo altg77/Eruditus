@@ -79,11 +79,17 @@
 
 <script>
   window.onload = function () {
-    const savedAvatar = localStorage.getItem("profileAvatar");
-    if (savedAvatar) {
-      document.getElementById("topbar-avatar").src = savedAvatar;
-    }
-  };
- </script>
+   // Obter os dados do usuário logado
+   const userData = JSON.parse(localStorage.getItem("userData"));
+   if (userData && userData.username) {
+     const currentUser = JSON.parse(localStorage.getItem(userData.username));
+     
+     // Se o avatar estiver salvo, exibe-o na topbar
+     if (currentUser && currentUser.avatar) {
+       document.getElementById("topbar-avatar").src = currentUser.avatar;
+     }
+   }
+ };
+</script>
 
 </html>

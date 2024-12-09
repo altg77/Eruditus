@@ -7,6 +7,7 @@ const cursoDescription = urlParams.get('description');
 const cursoMetadata = urlParams.get('metadata');
 const cursoTags = urlParams.get('tags');
 
+
 document.body.style.backgroundImage = `linear-gradient(to left, rgba(0, 0, 0, 0.9) 40%, rgba(0, 0, 0, 1)), url('${imageUrl}')`;
 document.body.style.backgroundSize = 'cover';  // Garante que a imagem cubra toda a tela
 document.body.style.backgroundPosition = 'center center';  // Centraliza a imagem
@@ -27,7 +28,7 @@ function getUrlParams() {
         imagem: urlParams.get('imagem'),
         description: urlParams.get('description'),
         metadata: JSON.parse(urlParams.get('metadata')), // Parse do JSON
-        tags: urlParams.get('tags')
+        tags: urlParams.get('tags'),
     };
 }
 

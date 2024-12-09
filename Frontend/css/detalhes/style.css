@@ -83,13 +83,37 @@ button {
     background: #006d0f;
     color: rgb(255, 255, 255);
     border: none;
-    padding: 20px 20px;
+    padding: 15px 30px;
     margin: 5px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
     font-weight: bold; /* Deixa a fonte em negrito */
 }
+
+.like-button, .dislike-button {
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px; /* Garante que o texto fique centralizado verticalmente */
+    border-radius: 50%;
+    background-color: #006d0f; /* Cor de fundo igual ao botão principal */
+    border: none; /* Remover borda externa */
+    color: rgb(255, 255, 255); /* Cor da fonte branca */
+    cursor: pointer;
+    margin: 0 2px; /* Ajuste do espaço entre os botões */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold; /* Deixa a fonte em negrito */
+}
+
+/* Efeito de hover para os botões de like e dislike */
+.like-button:hover, .dislike-button:hover {
+    background-color: #00520f; /* Cor de fundo mais escura no hover */
+    transform: scale(1.1); /* Efeito de aumento ao passar o mouse */
+}
+
 
 button:hover {
     background: #0f3d10;

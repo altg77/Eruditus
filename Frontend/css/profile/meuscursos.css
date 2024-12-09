@@ -1,0 +1,168 @@
+/* Estilo para o layout geral */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Garantir que o body e html ocupem toda a altura */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contêiner principal */
+.container {
+    flex: 1; /* Faz o contêiner ocupar o espaço disponível */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Rodapé */
+#rodape-container {
+    font-size: 0.9rem; /* Tamanho do texto */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+
+/* Header */
+  .container header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 45px 20px;
+  }
+  
+  .container header h1 {
+    font-size: 2.8rem;
+    margin-left: 200px;
+  }
+  
+  .container header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    margin-left: 200px;
+
+
+  }
+  
+  .container header nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .container header nav ul li a:hover {
+    color: #3cff00;
+  }
+  
+  /* Main content */
+  .container main {
+    padding: 20px;
+  }
+  
+  /* Reminder section */
+  .container .reminder {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .container .reminder h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+  
+  .container .reminder p {
+    margin-bottom: 20px;
+  }
+  
+  .container .reminder button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .container .reminder button:hover {
+    background-color: #0056b3;
+  }
+  
+  .container .reminder button:nth-child(2) {
+    background-color: #dc3545;
+  }
+  
+  .container .reminder button:nth-child(2):hover {
+    background-color: #a71d2a;
+  }
+  
+  /* Course section */
+  .container .course {
+    display: flex;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .container .course img {
+    max-width: 150px;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+  
+  .container .course-details {
+    flex-grow: 1;
+  }
+  
+  .container .course-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .container .course-details p {
+    margin-bottom: 15px;
+  }
+  
+  .container .progress {
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  .container .progress span {
+    font-weight: bold;
+  }
+
+  /* CSS para o contêiner principal */
+.content-list {
+    width: 77%; /* Largura adaptável */
+    margin: 20px 210px; /* Centraliza o contêiner horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f9f9f9; /* Cor de fundo suave */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
+    font-family: 'Arial', sans-serif; /* Fonte padrão */
+    color: #333; /* Cor do texto */
+}
+
+/* Títulos dentro do contêiner */
+.content-list h2 {
+    font-size: 1.8rem; /* Tamanho do título */
+    color: #222; /* Cor do título */
+    border-bottom: 2px solid #4caf50; /* Linha decorativa */
+    padding-bottom: 8px; /* Espaçamento entre o texto e a linha */
+    margin-bottom: 16px; /* Espaçamento inferior */
+}
+
+/* Parágrafos dentro do contêiner */
+.content-listt p {
+    font-size: 1rem; /* Tamanho do texto */
+    line-height: 1.6; /* Altura das linhas para legibilidade */
+    color: #555; /* Cor do texto */
+}
+
+  

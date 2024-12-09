@@ -47,8 +47,10 @@
             <div class="tags" id="curso-tags"></div>
 
             <div class="buttons">
-                <button class="watch-now">Começe assitir as aulas</button>
-                <button class="buy-options">Adicionar ao carrinho</button>
+                <button class="watch-now" id="inscrever-bnt">Inscreva-se Agora</button>
+
+                <button class="like-button" onclick="toggleLike()">👍</button>
+                <button class="dislike-button" onclick="toggleDislike()">👎</button>
             </div>
         </div>
     </div>
@@ -91,20 +93,31 @@
 <script src="/Frontend/js/detalhes/turma.js"></script>
 <script src="/Frontend/js/detalhes/atividades.js"></script>
 <script src="/Frontend/js/detalhes/sobre.js"></script>
+
+<script src="/Frontend/js/detalhes/inscrição.js"></script>
 <script src="/Frontend/js/detalhes/configurar.js"></script>
 
 <script src="/Frontend/js/Card/carregardetalhes.js"></script>
+<script src="/Frontend/js/detalhes/inscri.js"></script>
 
 
-<script>  window.onload = function () {
-    showEpisodes();
-    const savedAvatar = localStorage.getItem("profileAvatar");
-    if (savedAvatar) {
-      document.getElementById("topbar-avatar").src = savedAvatar;
-    }
-  };
+<script>
+    window.onload = function () {
+        showEpisodes();
+     // Obter os dados do usuário logado
+     const userData = JSON.parse(localStorage.getItem("userData"));
+     if (userData && userData.username) {
+       const currentUser = JSON.parse(localStorage.getItem(userData.username));
+       
+       // Se o avatar estiver salvo, exibe-o na topbar
+       if (currentUser && currentUser.avatar) {
+         document.getElementById("topbar-avatar").src = currentUser.avatar;
+       }
+     }
+   };
 </script>
 
+   
 <script>toggleOculta();</script>
 
 </html>

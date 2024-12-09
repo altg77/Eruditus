@@ -184,13 +184,25 @@
 </script>
 
 <script>
-  // Carregar o avatar salvo no localStorage ao carregar a topbar
-  window.onload = function () {
-    const savedAvatar = localStorage.getItem("profileAvatar");
-    if (savedAvatar) {
-      document.getElementById("topbar-avatar").src = savedAvatar;
+ window.onload = function () {
+  // Obter os dados do usuário logado
+  const userData = JSON.parse(localStorage.getItem("userData"));
+  if (userData && userData.username) {
+    const currentUser = JSON.parse(localStorage.getItem(userData.username));
+    
+    // Se o usuário existir e o avatar estiver salvo, exibe-o na topbar
+    if (currentUser && currentUser.avatar) {
+      document.getElementById("topbar-avatar").src = currentUser.avatar;
+    } else {
+      // Se não houver avatar, define um avatar padrão
+      document.getElementById("topbar-avatar").src = "/Frontend/img/perfis/semfoto.png"; // URL de imagem padrão
     }
-  };
+  } else {
+    // Se o usuário não estiver logado ou os dados não estiverem disponíveis
+    console.log("Usuário não está logado ou os dados estão ausentes.");
+  }
+};
+
 </script>
 
 

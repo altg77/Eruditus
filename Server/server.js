@@ -21,6 +21,11 @@ app.get('/Eruditus/signup', (req, res) => {
     res.sendFile(path.join(__dirname, '../Frontend', 'registro.html'));
 });
 
+// Rota para a página de registro
+app.get('/Eruditus/mycursos', (req, res) => {
+    res.sendFile(path.join(__dirname, '../Frontend', 'meuscursos.html'));
+});
+
 
 // Configuração do servidor para rodar na porta 3000
 const PORT = 3000;

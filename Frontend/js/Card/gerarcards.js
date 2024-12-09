@@ -269,6 +269,7 @@ const cursos = [
             episodios: 15
         },
         tags: ["15 Atividades", "50 Horas de vídeo", "18 recursos", "Certificado"],
+
     },
 ];
 
@@ -502,5 +503,45 @@ document.getElementById('pesquisa-input').addEventListener('input', function () 
         });
     }
 });
+
+function gerarCardsInscritos() {
+    const user = JSON.parse(localStorage.getItem("user"));
+
+    // Verifica se há um usuário no localStorage e se ele tem cursos inscritos
+    if (!user || user.cursosInscritos.length === 0) {
+        alert("Você ainda não se inscreveu em nenhum curso.");
+        return;
+    }
+
+    const container = document.getElementById("content-container"); // Certifique-se de que o contêiner existe
+    container.innerHTML = ""; // Limpa os cards existentes
+
+    // Filtra os cursos com base nos IDs dos cursos inscritos do usuário
+    const cursosInscritos = cursos.filter(curso => user.cursosInscritos.includes(curso.id));
+
+    // Verifica se o array de cursosInscritos está vazio, caso contrário, gera os cards
+    if (cursosInscritos.length === 0) {
+        alert("Nenhum curso encontrado para o usuário.");
+        return;
+    }
+
+    cursosInscritos.forEach(curso => {
+        const card = document.createElement("div");
+        card.className = "card";
+
+        // Criação do card para cada curso
+        card.innerHTML = `
+            <img src="${curso.imagem}" alt="${curso.categoria}">
+            <h3>${curso.title}</h3>
+            <p>${curso.description}</p>
+        `;
+
+        // Adiciona o card ao contêiner
+        container.appendChild(card);
+    });
+}
+
+
+
 
 

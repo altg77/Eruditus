@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS CONFIGURAR TOPBAR -->
+    <link rel="stylesheet" href="/Frontend/css/profile/meuscursos.css">
+    <link rel="stylesheet" href="/Frontend/css/index/reset.css">
+
+
+    <!-- Favicon e titulo -->
+    <link rel="shortcut icon" href="/Frontend/img/icons/FAVICON.png" type="image/x-icon">
+    <title>Eruditus | Meus cursos</title>
+
+</head>
+<body>
+  <div id="pesquisatop-placeholder"></div>
+  
+  <div id="topbar-container"></div> <!-- Aqui será carregado o topbar -->
+
+  <div class="container">
+    <header>
+      <h1>Meus Cursos Inscritos</h1>
+      <div id="content-container"></div>
+  </div>
+
+    <div id="rodape-container"></div> <!-- Aqui será carregado o rodape -->
+
+</body>
+
+<!-- Scripts de authenticação, topbar e rodape -->
+<script src="/Frontend/js/topbar-rodape/rodape.js"></script>
+<script src="/Frontend/js/login-registro/autenticado.js"></script>
+<script src="/Frontend/js/topbar-rodape/accoutsair.js"></script>
+
+<!-- Scripts de meus cursos -->
+<script src="/Frontend/js/meuscursos/opcoes.js"></script>
+
+<script src="/Frontend/js/Card/gerarcards.js"></script>
+
+
+<script>
+ window.onload = function () {
+  gerarCardsInscritos();
+  // Obter os dados do usuário logado
+  const userData = JSON.parse(localStorage.getItem("userData"));
+  if (userData && userData.username) {
+    const currentUser = JSON.parse(localStorage.getItem(userData.username));
+    
+    // Se o usuário existir e o avatar estiver salvo, exibe-o na topbar
+    if (currentUser && currentUser.avatar) {
+      document.getElementById("topbar-avatar").src = currentUser.avatar;
+    } else {
+      // Se não houver avatar, define um avatar padrão
+      document.getElementById("topbar-avatar").src = "/Frontend/img/perfis/semfoto.png"; // URL de imagem padrão
+    }
+  } else {
+    // Se o usuário não estiver logado ou os dados não estiverem disponíveis
+    console.log("Usuário não está logado ou os dados estão ausentes.");
+  }
+};
+
+</script>
+
+
+<!-- Redirecionador -->
+<script src="/Frontend/js/Card/redirecionador.js"></script>
+
+<script>window.history.pushState(null, null, "/Eruditus/mycursos");</script>
+</html>
